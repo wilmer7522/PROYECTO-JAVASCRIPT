@@ -11,9 +11,11 @@ let footerSelect = async(e, id)=>{
     for(let val of li){
         let [a] = val.children
         a.classList.remove('select');
+
     }
     let [a] = id.children
     a.classList.add('select');   
+
 }
 
 
@@ -28,6 +30,22 @@ rocket.addEventListener("click", async(e)=>{
 let capsules = document.querySelector("#capsules")
 capsules.addEventListener("click", async(e)=>{
     await footerSelect(e, capsules)
+    let paginacion = document.querySelector("#paginacion");
+    paginacion.innerHTML = ""
+    paginacion.append(await paginationCapsules())
+})
+
+let history = document.querySelector("#history")
+history.addEventListener("click", async(e)=>{
+    await footerSelect(e, history)
+    let paginacion = document.querySelector("#paginacion");
+    paginacion.innerHTML = ""
+    paginacion.append(await paginationCapsules())
+})
+
+let company = document.querySelector("#company")
+company.addEventListener("click", async(e)=>{
+    await footerSelect(e, company)
     let paginacion = document.querySelector("#paginacion");
     paginacion.innerHTML = ""
     paginacion.append(await paginationCapsules())

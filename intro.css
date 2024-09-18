@@ -1,0 +1,74 @@
+@font-face {
+    font-family: tittle;
+    src: url(./storage/font/Roboto/Roboto-Bold.ttf);
+}
+
+#container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    top: 0vw;
+    left: 0vw;
+    overflow: hidden;
+}
+
+#black {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+
+#fondito {
+    position: absolute;
+    width: 64.635vw;
+    height: 48.75vw;
+    left: 17.708vw;
+    top: 11.406vw;
+    background: rgba(64, 71, 145, 0.7);
+    mix-blend-mode: normal;
+    filter: blur(174.83px);
+    border-radius: 246.893px;
+}
+
+#shadow {
+    position: absolute;
+    width: 37.552vw;
+    height: 35.938vw;
+    left: 11.458vw;
+    top: 30vw;
+    background: rgba(105, 174, 255, 0.9);
+    mix-blend-mode: normal;
+    filter: blur(154.83px);
+    border-radius: 246.893px;
+}
+
+#shadow2 {
+    position: absolute;
+    width: 64.635vw;
+    height: 48.75vw;
+    left: 46.302vw;
+    top: -7.708vw;
+    background: rgba(97, 100, 141, 0.9);
+    mix-blend-mode: normal;
+    filter: blur(170.83px);
+    border-radius: 246.893px;
+}
+
+#fondo img{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0vw;
+    left: 0vw;
+    z-index: 1;
+}
+
+#tittle {
+    position: absolute;
+    color: white;
+    font-size: 7vw;
+    font-family: tittle;
+}

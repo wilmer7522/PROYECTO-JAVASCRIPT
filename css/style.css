@@ -42,6 +42,9 @@ body {
     align-items: center;
     text-transform: uppercase;
 }
+
+/*Barras mobiles*/
+/*backgraund animacion*/
 .load{
     background: linear-gradient(120deg, #ffffff0e 30%, #ffffff23 38%, #f0f0f032 40%, #e5e5e50c 40%);
     background-size: 200% 100%;
@@ -53,7 +56,7 @@ body {
 }
 @keyframes load{
     100%{
-        background-position: -100% 0;
+        background-position: -100% 0; /*animacion desplazamiento*/
     }
 }
 .main {
@@ -69,8 +72,10 @@ body {
     grid-area: nav__1;
 }
 
+/*Barras Izquierda*/
+
 .description__item {
-    /* background: blue; */
+    /*background: blue; */
     overflow-y: auto;
     height: 75vh;
 }
@@ -315,10 +320,10 @@ body {
 
 
 .footer {
-    /* background: coral; */
+    /*background: coral; */
     grid-area: section__footer;
     display: grid;
-    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-columns: 10fr 10fr 10fr;
     grid-template-areas: ". footer__menu .";
 }
 
@@ -328,14 +333,14 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-top-left-radius: 40px;
+    border-top-left-radius:40px;
     border-top-right-radius: 40px;
 }
 .footer ul::after{
     content: "";
     position: relative;
     margin-top: 10px;
-    right: -36px;
+    right: -35px;
     bottom: 0;
     width: 0;
     height: 0;
@@ -347,7 +352,7 @@ body {
     content: "";
     position: relative;
     margin-top: 10px;
-    left: -36px;
+    left: -35px;
     bottom: 0;
     width: 0;
     height: 0;

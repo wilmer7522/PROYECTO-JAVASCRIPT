@@ -108,7 +108,7 @@ body {
     /* background: coral; */
     grid-area: section__footer;
     display: grid;
-    grid-template-columns: 10fr 10fr 10fr; /* ancho de Footer*/
+    grid-template-columns: 1fr 4fr 1fr; /* ancho de Footer*/
     grid-template-areas: ". footer__menu .";
 }
 

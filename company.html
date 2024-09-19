@@ -1,26 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sp">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SpaceX</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
-    <script type="module" src="js/main1.js" defer></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> -->
     
-    
+    <link rel="stylesheet" href="css/company.css">
+    <script type="module" src="js/modules/company.js" defer></script>
 </head>
 <body>
-
     <mi-header class="header">
         <div id="header__title" class="header__title">
             <div class="load"></div>
         </div>
     </mi-header>
-
     <main class="main">
-        <nav class="nav__description">
+        <mi-nav class="nav__description">
             <div id="description__item" class="description__item">
                 <div class="load"></div>
                 <div class="load"></div>
@@ -29,61 +26,54 @@
                 <div class="load"></div>
             </div>
             <div class="description__buttom">
-            
+                <!-- <a href="#">a</a>
+                <a href="#">b</a> -->
             </div>
-        </nav>
-
+        </mi-nav>
         <section class="main__section">
             <article id="section__information__1" class="section__information__1">
-                <div class="load" style="height: 150px;"></div>
+                <div class="load" style="height: 150px;">1</div>
             </article>
+
             <article class="section__information__container">
                 <div class="section__information__2">
                     <div>
-                        <div class="load" style="height: 150px;"></div>
+                        <div class="load" style="height: 150px;">2</div>
                     </div>
                     <div id="information__table__1" class="information__table__1">
-                        <div class="load" style="height: 160px;"></div>
+                        <div class="load" style="height: 160px;">3</div>
                     </div>
                 </div>
                 <div id="section__image" class="section__image">
-                    <div class="load" style="height: 350px"></div>
+                    <div class="load" style="height: 350px">4</div>
                 </div>
                 <div class="section__information__3">
                     <div>
-                        <div class="load" style="height: 150px;"></div>
+                        <div class="load" style="height: 150px;">5</div>
                     </div>
                     <div id="information__table__2" class="information__table__2">
-                        <div class="load" style="height: 160px;"></div>
+                        <div class="load" style="height: 160px;">6</div>
                     </div>
                 </div>
             </article>
-        
-        
 
-
-
-        
-
-        
 
             <footer class="footer">
                 <ul>
                     <li id="rocket">
-                        <a class="select" href="#">
+                        <a  href="#">
                             <img src="storage/img/icons/rocket.svg">
                             <span>Rockets</span>
                         </a>
                     </li>
                     <li id="capsules">
-                        <a class="select" href="#">
+                        <a  href="#">
                             <img src="storage/img/icons/capsule.svg">
                             <span>Capsules</span>
                         </a>
                     </li>
-
                     <li id="history">
-                        <a class="select" href="#">
+                        <a  href="#">
                             <img src="storage/img/icons/history.svg">
                             <span>History</span>
                         </a>
@@ -97,9 +87,9 @@
                 </ul>
             </footer>
         </section>
-
-        <nav class="nav__information">
+        <mi-nav2 class="nav__information">
             <div id="information__2" class="information__item">
+                <div class="load"></div>
                 <div class="load"></div>
                 <div class="load"></div>
                 <div class="load"></div>
@@ -107,13 +97,13 @@
                 <div class="load"></div>
             </div>
             <div id="paginacion" class="information__buttom"></div>
-        </nav>
-    
-
+        </mi-nav2>
     </main>
 
-
-
     
+
 </body>
 </html>
+
+
+

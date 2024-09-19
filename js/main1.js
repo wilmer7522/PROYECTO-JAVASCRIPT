@@ -1,8 +1,14 @@
-import { 
+/*import { 
     load,
     paginationCapsules,
-    paginationRockets
-} from "./modulesComponents/pagination.js";
+    paginationRockets,
+    paginationHistory,
+    paginationCompany
+} from "./modulesComponents/pagination.js";*/
+
+import {
+    paginationCompany
+} from "../js/modules/company.js"
 
 let footerSelect = async(e, id)=>{
     e.preventDefault();
@@ -40,7 +46,7 @@ history.addEventListener("click", async(e)=>{
     await footerSelect(e, history)
     let paginacion = document.querySelector("#paginacion");
     paginacion.innerHTML = ""
-    paginacion.append(await paginationCapsules())
+    paginacion.append(await paginationHistory())
 })
 
 let company = document.querySelector("#company")
@@ -48,7 +54,7 @@ company.addEventListener("click", async(e)=>{
     await footerSelect(e, company)
     let paginacion = document.querySelector("#paginacion");
     paginacion.innerHTML = ""
-    paginacion.append(await paginationCapsules())
+    paginacion.append(await paginationCompany())
 })
 
 

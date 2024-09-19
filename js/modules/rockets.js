@@ -6,7 +6,8 @@ export const getAllRockets = async ()=>{
 export const getAllRocketsId = async (id)=>{
     let res = await fetch(`https://api.spacexdata.com/v4/rockets/${id}`)
     let data = await res.json();
-    return data;
+    
+    return data;    
 }
 export const getRocketMassTotal  = async() =>{
     let config = {

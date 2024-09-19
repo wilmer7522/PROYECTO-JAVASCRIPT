@@ -1,0 +1,170 @@
+@font-face {
+    font-family: tittle;
+    src: url(./storage/font/Roboto/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: parrafo;
+    src: url(./storage/font/Roboto/Roboto-Light.ttf);
+}
+
+@font-face {
+    font-family: din;
+    src: url(../storage/font/D-DIN/D-DIN-Bold.otf);
+}
+
+body {
+    background-color: black;
+}
+
+#container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    top: 0vw;
+    left: 0vw;
+    overflow: hidden;
+}
+
+#black {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+
+/* #fondito {
+    position: absolute;
+    width: 64.635vw;
+    height: 48.75vw;
+    left: 17.708vw;
+    top: 11.406vw;
+    background: rgba(64, 71, 145, 0.7);
+    mix-blend-mode: normal;
+    filter: blur(174.83px);
+    border-radius: 246.893px;
+}
+
+#shadow {
+    position: absolute;
+    width: 37.552vw;
+    height: 35.938vw;
+    left: 11.458vw;
+    top: 30vw;
+    background: rgba(105, 174, 255, 0.9);
+    mix-blend-mode: normal;
+    filter: blur(154.83px);
+    border-radius: 246.893px;
+}
+*/
+#shadow2 {
+    position: absolute;
+    width: 64.635vw;
+    height: 48.75vw;
+    left: 46.302vw;
+    top: -7.708vw;
+    background: rgba(97, 100, 141, 0.9);
+    mix-blend-mode: normal;
+    filter: blur(170.83px);
+    border-radius: 246.893px;
+    z-index: 1;
+} 
+
+#fondo img{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0vw;
+    left: 0vw;
+    z-index: 1;
+}
+
+#tittle {
+    position: absolute;
+    color: white;
+    font-size: 3vw;
+    left: 5vw;
+    top: -1vw;
+    font-family: tittle;
+    z-index: 1;
+}
+
+#astronaut {
+    position: absolute;
+    width: 40vw;
+    top: 10vw;
+    left: 10vw;
+    z-index: 1;
+}
+
+h2 {
+    position: absolute;
+    color: white;
+    font-weight: 600;
+    font-size: 3.5vw;
+    text-align: center;
+    font-family: din;
+    z-index: 1;
+    top: 8vw;
+    left: 45vw;
+}
+
+#description {
+    position: absolute;
+    text-align: center;
+    color: white;
+    font-size: 1.2vw;
+    font-family: parrafo;
+    width: 50vw;
+    top: 18vw;
+    left: 43vw;
+    z-index: 1;
+}
+
+#astronauta {
+    position: absolute;
+    width: 100vw;
+    left: -30vw;
+    top: 5vw;
+}
+
+#space {
+    position: absolute;
+    width: 15vw;
+    top: -2vw;
+    left: 5vw;
+    z-index: 1;
+}
+
+.btn {
+    position: absolute;
+    font-size: 1.2vw;
+    font-family: din;
+    top: 35vw;
+    left: 60vw;
+    width: 15vw;
+    height: 4vw;
+    border: none;
+    outline: none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    background-color: rgb(14, 14, 26);
+    color: rgb(234, 234, 234);
+    font-weight: 700;
+    transition: 0.6s;
+    box-shadow: 0px 0px 60px #1f4c65;
+    -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+    z-index: 1;
+}
+  
+.btn:active {
+    scale: 0.92;
+}
+  
+.btn:hover {
+    background: rgb(2,29,78);
+    background: linear-gradient(270deg, rgba(2, 29, 78, 0.681) 0%, rgba(31, 215, 232, 0.873) 60%);
+    color: rgb(4, 4, 38);
+}

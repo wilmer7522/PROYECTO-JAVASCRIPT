@@ -39,7 +39,7 @@ import {
 export const load = async()=>{
     let header__title = document.querySelector("#header__title");
     header__title.innerHTML = `
-        <div class="load"></div>
+        <div class="load">ayudaaaaa</div>
     `;
 
     let description__item = document.querySelector("#description__item");

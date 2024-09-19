@@ -1,13 +1,10 @@
-@import url(variables.css);
+@import url(../css/variables.css);
 
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Roboto-Regular";
-}
 
 body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
     background: linear-gradient(var(--color--one), var(--color--one--rgba));
 }
 
@@ -44,7 +41,7 @@ body {
 
 /*Barras mobiles*/
 /*backgraund animacion*/
-.load{
+.load, #load{
     background: linear-gradient(120deg, #ffffff0e 30%, #ffffff23 38%, #f0f0f032 40%, #e5e5e50c 40%);
     background-size: 200% 100%;
     background-position: 100% 0;
@@ -52,23 +49,23 @@ body {
     width: 100%;
     margin: 12px 0;
     height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 @keyframes load{
     100%{
         background-position: -100% 0; /*animacion desplazamiento*/
     }
 }
+
 .main {
     /* background: orange; */
     height: 90vh;
     display: grid;
     grid-template-columns: 1.5fr 6fr 2fr;
     grid-template-areas: "nav__1 main nav__2";
-}
-
-.nav__description {
-    /* background: red; */
-    grid-area: nav__1;
 }
 
 /*Barras Izquierda*/
@@ -327,6 +324,10 @@ body {
 }
 
 .footer ul {
+    position: absolute;
+    top: 38.3vw;
+    left: 5vw;
+    width: 50vw;
     grid-area: footer__menu;
     background: var(--color--one);
     display: flex;
@@ -471,4 +472,20 @@ progress[value]::-webkit-progress-value {
 progress[value]::-moz-progress-bar {
     border-radius: 10em;
     background: var(--color);
+}
+
+#uno, #dos, #tres, #cuatro {
+    width: 2vw;
+    height: 2vw;
+    background-color: #14162C;
+    color: white;
+    margin-top: -10vw;
+    gap: 0vw;
+    border: none;
+}
+
+#buttons {
+    position: absolute;
+    top: 46vw;
+    left: 85vw;
 }

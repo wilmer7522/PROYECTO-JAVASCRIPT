@@ -1,6 +1,8 @@
 @import url(../css/variables.css);
 
-
+* {
+    font-family: "Roboto-Regular";
+}
 body {
     width: 100vw;
     height: 100vh;
@@ -48,10 +50,12 @@ body {
     animation: load 2s infinite;
     width: 100%;
     margin: 12px 0;
-    height: 100px;
+    height: 35vw;
     display: flex;
     justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    color: white;
+    text-align: justify;
 }
 
 @keyframes load{
@@ -74,6 +78,8 @@ body {
     /*background: blue; */
     overflow-y: auto;
     height: 70vh;
+    padding: 1vw;
+    flex-wrap: wrap;
 }
 
 .description__buttom {
@@ -232,10 +238,14 @@ body {
 .section__image {
     /* background: orange; */
     grid-area: colum__2;
-    display: flex;
-    overflow-x: auto;
-    align-items: center;
+
+    overflow-x: scroll ;
+    width: 20vw;
+
+
 }
+
+
 
 .section__image>.carousel__item {
     /* background: violet; */
@@ -245,8 +255,8 @@ body {
 }
 
 .section__image>.carousel__item img {
-    width: 305px;
-    height: 190px;
+
+
     border-radius: 10px;
     object-fit: cover;
     box-shadow: 0px 0px 10px var(--color--one);
@@ -488,4 +498,65 @@ progress[value]::-moz-progress-bar {
     position: absolute;
     top: 46vw;
     left: 85vw;
+}
+
+#links {
+    text-decoration: none;
+}
+
+#country {
+    font-size: 1vw;
+    margin-top: 1vw;
+    font-weight: 600;
+}
+
+#descripcion {
+    font-size: 0.9vw;
+    margin-top: -1vw;
+}
+
+#tittledes {
+    font-size: 1vw;
+    font-weight: 600;
+}
+
+#costo {
+    font-size: 0.9vw;
+    margin-top: -1vw;
+}
+
+#tittlecost {
+    font-size: 1vw;
+    font-weight: 600;
+}
+
+#fly {
+    font-size: 0.9vw;
+    margin-top: 0vw;
+}
+
+#tittlelink {
+    font-size: 1vw;
+    font-weight: 600;
+}
+
+#link {
+    font-size: 0.9vw;
+    margin-top: 0vw;
+}
+
+#icono {
+    width: 1.5vw;
+}
+
+#imagen {
+    box-shadow: 0px 0px 10px var(--color--one);
+    display: flex;
+    flex-direction: row;
+}
+
+#imagen img{
+    width: 20vw;
+    border-radius: 1vw;
+    object-fit: cover;
 }

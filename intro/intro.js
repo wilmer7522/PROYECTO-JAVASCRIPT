@@ -1,3 +1,3 @@
 document.getElementById('btn').addEventListener('click', () => {
-    window.location.href = '../index1.html';
+    window.location.href = '../rocket/rocket.html';
 })

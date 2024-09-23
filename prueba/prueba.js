@@ -1,27 +1,65 @@
+let variable = 0
+
+
+
+document.getElementById("uno").addEventListener("click", () => {
+    let variable = 0
+    variable = 0
+    unique(variable)
+    console.log("jesus " + variable);
+
+})
+
+document.getElementById("dos").addEventListener("click", () => {
+    let variable = 0
+    variable =  1
+    unique(variable)
+    console.log("jesus " + variable);
+
+})
+
+document.getElementById("tres").addEventListener("click", () => {
+    let variable = 0
+    variable =  2
+
+    unique(variable)
+    console.log(variable);
+
+})
+
+document.getElementById("cuatro").addEventListener("click", () => {
+    let variable = 0
+    variable =  3
+
+    unique(variable)
+    console.log(variable);
+
+})
+
 let container = document.getElementById('container')
 
-function unique() {
+function unique(variable) {
     fetch('https://api.spacexdata.com/v4/rockets')
     .then(res => res.json())
     .then(data => {
+        console.log("ayuda " + variable);
 
-    container.innerHTML = `
-
-        <div id="container">
+        container.innerHTML = `
+        
             <mi-top id="topbar">
-                <div>${data[0].name}</div>
+                <div>${data[variable].name}</div>
             </mi-top>
 
             <mi-right id="rightbar" class="no">
                 <img id= "icono1" src="../storage/img/icons/mech.svg" alt="">
-                <p id = "country">${data[0].country}</p><br>
-                <p id = "descripcion">${data[0].description}</p><br>
+                <p id = "country">${data[variable].country}</p><br>
+                <p id = "descripcion">${data[variable].description}</p><br>
                 <img id= "icono2" src="../storage/img/icons/mech.svg" alt="">
                 <p id = "tittledes"> The estimated cost per rocket launch</p><br>
-                <p id = "costo">$ ${data[0].cost_per_launch}</p><br>
+                <p id = "costo">$ ${data[variable].cost_per_launch}</p><br>
                 <img id= "icono3" src="../storage/img/icons/mech.svg" alt="">
                 <p id = "tittlecost"> The date of the first flight of the rocket</p>
-                <p id = "fly">${data[0].first_flight}</p><br>
+                <p id = "fly">${data[variable].first_flight}</p><br>
                 <img id= "icono4" src="../storage/img/icons/mech.svg" alt="">
                 <p id = "tittlelink"> Read more about the coete</p><br>
                 <a id = "link" href = "https://en.wikipedia.org/wiki/Falcon_1">Wikipedia</a>
@@ -31,61 +69,61 @@ function unique() {
                 <div id = "barras">
                     <div>
                         <label for="">Rocket weight :</label><br>
-                        <progress max="1420788" value="${data[0].mass.kg}"></progress>
+                        <progress max="1420788" value="${data[variable].mass.kg}"></progress>
                     </div>
                     <div>
                         <label for="">Rocket weight :</label><br>
-                        <progress max="150000" value="${data[0].payload_weights[0].kg}"></progress>
+                        <progress max="150000" value="${data[variable].payload_weights[0].kg}"></progress>
                     </div>
                     <div>
                         <label for="">Rocket weight :</label><br>
-                        <progress max="118" value="${data[0].height.meters}"></progress>
+                        <progress max="118" value="${data[variable].height.meters}"></progress>
                     </div>
                     <div>
                         <label for="">Rocket weight :</label><br>
-                        <progress max="12.2" value="${data[0].diameter.meters}"></progress>
+                        <progress max="12.2" value="${data[variable].diameter.meters}"></progress>
                     </div>
                     <div>
                         <label for="">Rocket weight :</label><br>
-                        <progress max="5.2" value="${data[0].second_stage.payloads.composite_fairing.diameter.meters}"></progress>
+                        <progress max="5.2" value="${data[variable].second_stage.payloads.composite_fairing.diameter.meters}"></progress>
                     </div>
                     <div>
                         <label for="">Rocket weight :</label><br>
-                        <progress max="13.1" value="${data[0].second_stage.payloads.composite_fairing.height.meters}"></progress>
+                        <progress max="13.1" value="${data[variable].second_stage.payloads.composite_fairing.height.meters}"></progress>
                     </div>
                 </div>
 
                 <div id = "valores">
                     <div>
-                        ${data[0].mass.kg} kg<br>
-                        ${data[0].mass.lb} lb<br>
+                        ${data[variable].mass.kg} kg<br>
+                        ${data[variable].mass.lb} lb<br>
                     </div>
                     <div>
-                        ${data[0].payload_weights[0].kg} kg<br>
-                        ${data[0].payload_weights[0].lb} lb<br>
+                        ${data[variable].payload_weights[0].kg} kg<br>
+                        ${data[variable].payload_weights[0].lb} lb<br>
                     </div>
                     <div>
-                        ${data[0].height.meters} M<br>
-                        ${data[0].height.feet} F<br>
+                        ${data[variable].height.meters} M<br>
+                        ${data[variable].height.feet} F<br>
                     </div>
                     <div>
-                        ${data[0].diameter.meters} M<br>
-                        ${data[0].diameter.feet} F<br>
+                        ${data[variable].diameter.meters} M<br>
+                        ${data[variable].diameter.feet} F<br>
                     </div>
                     <div>
-                        ${data[0].second_stage.payloads.composite_fairing.diameter.meters} M<br>
-                        ${data[0].second_stage.payloads.composite_fairing.diameter.feet} F<br>
+                        ${data[variable].second_stage.payloads.composite_fairing.diameter.meters} M<br>
+                        ${data[variable].second_stage.payloads.composite_fairing.diameter.feet} F<br>
                     </div>
                     <div>
-                        ${data[0].second_stage.payloads.composite_fairing.height.meters} M<br>
-                        ${data[0].second_stage.payloads.composite_fairing.height.feet} F
+                        ${data[variable].second_stage.payloads.composite_fairing.height.meters} M<br>
+                        ${data[variable].second_stage.payloads.composite_fairing.height.feet} F
                     </div>
                 </div>
             </mi-left>
 
             <mi-center id="centerbar">
-                <img src = "${data[0].flickr_images[0]}">
-                <img src = "${data[0].flickr_images[1]}">
+                <img src = "${data[variable].flickr_images[0]}">
+                <img src = "${data[variable].flickr_images[1]}">
             </mi-center>
 
             <mi-supcenter id="supcenter">
@@ -106,12 +144,12 @@ function unique() {
                 </div>
 
                 <div id = "values">
-                    <p>${data[0].type}</p>
-                    <p>${data[0].active}</p>
-                    <p>${data[0].stages}</p>
+                    <p>${data[variable].type}</p>
+                    <p>${data[variable].active}</p>
+                    <p>${data[variable].stages}</p>
                     <p>2</p>
-                    <p>${data[0].landing_legs.number}</p>
-                    <p>${data[0].landing_legs.material}</p>
+                    <p>${data[variable].landing_legs.number}</p>
+                    <p>${data[variable].landing_legs.material}</p>
                 </div>
             </mi-rightcenter>
 
@@ -128,21 +166,21 @@ function unique() {
                 </div>
 
                 <div id = "values">
-                    <p>${data[0].engines.type} ${data[0].engines.version}</p>
-                    <p>${data[0].engines.engine_loss_max}</p>
-                    <p>${data[0].engines.layout}</p>
-                    <p>${data[0].engines.number}</p>
-                    <p>${data[0].engines.propellant_1}</p>
-                    <p>${data[0].engines.propellant_2}</p>
+                    <p>${data[variable].engines.type} ${data[variable].engines.version}</p>
+                    <p>${data[variable].engines.engine_loss_max}</p>
+                    <p>${data[variable].engines.layout}</p>
+                    <p>${data[variable].engines.number}</p>
+                    <p>${data[variable].engines.propellant_1}</p>
+                    <p>${data[variable].engines.propellant_2}</p>
                 </div>
             </mi-leftcenter>
 
             <div id="downbar">
-            <img src="../storage/img/icons/rocket.svg" alt="">
-            <img src="../storage/img/icons/capsule.svg" alt="">
-            <img src="../storage/img/icons/history.svg" alt="">
-            <img src="../storage/img/icons/company.svg" alt="">
-            </div>
+                <img src="../storage/img/icons/rocket.svg" alt="">
+                <img src="../storage/img/icons/capsule.svg" alt="">
+                <img src="../storage/img/icons/history.svg" alt="">
+                <img src="../storage/img/icons/company.svg" alt="">
+            </div> 
 
             <div id="buttons">
                 <button id="uno">1</button>
@@ -150,13 +188,11 @@ function unique() {
                 <button id="tres">3</button>
                 <button id="cuatro">4</button>
             </div>
-        </div>
-    `
-
-})
+        
+            `
+    })
 }
 
-unique()
 
 
 

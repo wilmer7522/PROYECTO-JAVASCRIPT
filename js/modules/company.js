@@ -173,7 +173,7 @@ fetch(`https://api.spacexdata.com/v4/company`)
                         <div class="load" style="height: 150px;">2</div>
                     </div>
                     <div id="information__table__1" class="information__table__1">
-                        <div class="load" style="height: 160px;"><a href="${data.links.twitter}" class="twitter" >Twitter SpaceX    <img src="storage/img/icons/rocket_mini.svg"></a></div>
+                        <div class="load" style="height: 160px;"><a href="${data.links.twitter}" class="twitter" target="_blank">Twitter SpaceX    <img src="storage/img/icons/rocket_mini.svg"></a></div>
                     </div>
                 </div>
                 <div id="section__image" class="section__image">
@@ -184,7 +184,7 @@ fetch(`https://api.spacexdata.com/v4/company`)
                         <div class="load" style="height: 150px;">5</div>
                     </div>
                     <div id="information__table__2" class="information__table__2">
-                        <div class="load" style="height: 160px;"><a href="${data.links.elon_twitter}" class="twitter" >Elon Twitter    <img src="storage/img/icons/rocket_mini.svg"></a></div>
+                        <div class="load" style="height: 160px;"><a href="${data.links.elon_twitter}" class="twitter" target="_blank" >Elon Twitter    <img src="storage/img/icons/rocket_mini.svg"></a></div>
                     </div>
                 </div>
 

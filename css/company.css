@@ -153,6 +153,10 @@ marquee img{
     
 }
 
+.load iframe::-webkit-scrollbar{
+    display: none;
+}
+
 
 
 .twitter{

@@ -4,7 +4,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-
     font-family: "Roboto-Regular";
 }
 
@@ -36,7 +35,7 @@ body {
     /* background: red; */
     color: var(--color--five);
     height: 10vh;
-    font-size: 2.3rem;
+    font-size: 2.3vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -94,8 +93,12 @@ body {
 .description__item {
     /*background: blue; */
     overflow-y: auto;
+<<<<<<< HEAD
     height: 75vh;
     color: white;
+=======
+    height: 70vh;
+>>>>>>> 88c1f3e7d399d631ee8e712e364b7dba392c7874
 }
 
 .description__buttom {
@@ -341,7 +344,7 @@ body {
     /*background: coral; */
     grid-area: section__footer;
     display: grid;
-    grid-template-columns: 10fr 10fr 10fr;
+    grid-template-columns: 1fr 8fr 1fr;
     grid-template-areas: ". footer__menu .";
 }
 

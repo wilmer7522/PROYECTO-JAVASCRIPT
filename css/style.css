@@ -52,11 +52,28 @@ body {
     width: 100%;
     margin: 12px 0;
     height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.load p{
+    color: var(--color--five);
+    border-bottom: 0.1em solid var(--color--five);
+    margin-bottom: 0.5em;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 @keyframes load{
     100%{
         background-position: -100% 0; /*animacion desplazamiento*/
     }
+}
+
+.found{
+    display: flex;
+    justify-content: center;
 }
 .main {
     /* background: orange; */
@@ -76,7 +93,12 @@ body {
 .description__item {
     /*background: blue; */
     overflow-y: auto;
+<<<<<<< HEAD
+    height: 75vh;
+    color: white;
+=======
     height: 70vh;
+>>>>>>> 88c1f3e7d399d631ee8e712e364b7dba392c7874
 }
 
 .description__buttom {
@@ -384,6 +406,15 @@ body {
     /* background: violet; */
     overflow-y: auto;
     height: 75vh;
+    color: white;
+    
+
+}
+
+.summary{
+    padding: 2em;
+    text-align: center;
+    font-size: 0.8em;
 }
 
 .information__buttom {

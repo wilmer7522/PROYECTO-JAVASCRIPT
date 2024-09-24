@@ -2,6 +2,12 @@ import {
     getAllRockets, 
     getAllRocketsId
 } from "../modules/rockets.js";
+
+import { 
+    getAllCompany, 
+    getAllCompanyId
+} from "../modules/company.js"
+
 import { 
     nameRockets 
 } from "./title.js";
@@ -44,7 +50,7 @@ export const load = async()=>{
 
     let description__item = document.querySelector("#description__item");
     description__item.innerHTML = `
-        <div class="load"></div>
+        <div class="load">izquierda</div>
         <div class="load"></div>
         <div class="load"></div>
         <div class="load"></div>
@@ -53,23 +59,23 @@ export const load = async()=>{
 
     let section__information__1 = document.querySelector("#section__information__1")
     section__information__1.innerHTML = `
-        <div class="load" style="height: 150px;"></div>
+        <div class="load" style="height: 150px;">iz</div>
     `;
 
     let information__table__1 = document.querySelector("#information__table__1")
     information__table__1.innerHTML = `
-        <div class="load" style="height: 160px;"></div>
+        <div class="load" style="height: 160px;">isd</div>
     `;
 
     let section__image = document.querySelector("#section__image")
     section__image.innerHTML = `
-        <div class="load" style="height: 350px"></div>
+        <div class="load" style="height: 350px">tttt</div>
     `;
 
 
     let information__table__2 = document.querySelector("#information__table__2")
     information__table__2.innerHTML = `
-        <div class="load" style="height: 160px;"></div>
+        <div class="load" style="height: 160px;">pppp</div>
     `;
 
     let information__2 = document.querySelector("#information__2")

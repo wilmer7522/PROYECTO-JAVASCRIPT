@@ -1,4 +1,4 @@
-@import url(./variablesprueba.css);
+@import url(./variablesRocket.css);
 
 @font-face {
     font-family: "Roboto-Regular";
@@ -184,6 +184,12 @@ body {
     align-items: center;
     cursor: pointer;
     height: 4.5vw;
+}
+
+#downbar a {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1vw;
 }
 
 #buttons > button {

@@ -1,3 +1,19 @@
+document.getElementById('iconrocket').addEventListener('click', () => {
+    window.location.href = '../Rocket/Rocket.html';
+})
+
+document.getElementById('iconcapsule').addEventListener('click', () => {
+    window.location.href = '../capsules.html';
+})
+
+document.getElementById('iconhistory').addEventListener('click', () => {
+    window.location.href = '../History/History.html';
+})
+
+document.getElementById('iconcompany').addEventListener('click', () => {
+    window.location.href = '../company.html';
+})
+
 let iconRocket = document.getElementById('iconrocket')
 let iconCapsule = document.getElementById('iconcapsule')
 let iconHistory = document.getElementById('iconhistory')
@@ -241,13 +257,6 @@ function unique(variable) {
                     <p>${data[variable].engines.propellant_2}</p>
                 </div>
             </mi-leftcenter>
-
-            <div id="downbar">
-                <img src="../storage/img/icons/rocket.svg" alt="">
-                <img src="../storage/img/icons/capsule.svg" alt="">
-                <img src="../storage/img/icons/history.svg" alt="">
-                <img src="../storage/img/icons/company.svg" alt="">
-            </div> 
         
             `
     })

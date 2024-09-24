@@ -47,7 +47,7 @@ body {
     top: 0;
     width: 100vw;
     height: 5vw;
-    background: linear-gradient(120deg, #ffffff0e 30%, #ffffff23 38%, #f0f0f032 40%, #e5e5e50c 40%);
+    background: transparent;    
     background-size: 200% 100%;
     background-position: 100% 0;
     animation: load 2s infinite;
@@ -65,7 +65,7 @@ body {
     left: 1vw;
     width: 15vw;
     height: 33vw;
-    background: linear-gradient(120deg, #ffffff0e 30%, #ffffff23 38%, #f0f0f032 40%, #e5e5e50c 40%);
+    background: transparent;    
     background-size: 200% 100%;
     background-position: 100% 0;
     animation: load 2s infinite;
@@ -79,7 +79,7 @@ body {
     right: 1vw;
     width: 15vw;
     height: 33vw;
-    background: linear-gradient(120deg, #ffffff0e 30%, #ffffff23 38%, #f0f0f032 40%, #e5e5e50c 40%);
+    background: transparent;    
     background-size: 200% 100%;
     background-position: 100% 0;
     animation: load 2s infinite;
@@ -92,7 +92,7 @@ body {
     left: 40.5vw;
     width: 20vw;
     height: 15vw;
-    background: linear-gradient(120deg, #ffffff0e 30%, #ffffff23 38%, #f0f0f032 40%, #e5e5e50c 40%);
+    background: transparent;    
     background-size: 200% 100%;
     background-position: 100% 0;
     animation: load 2s infinite;
@@ -116,7 +116,7 @@ body {
     height: 10vw;
     top: 6vw;
     left: 18vw;
-    background: linear-gradient(120deg, #ffffff0e 30%, #ffffff23 38%, #f0f0f032 40%, #e5e5e50c 40%);
+    background: transparent;
     background-size: 200% 100%;
     background-position: 100% 0;
     animation: load 2s infinite;
@@ -130,8 +130,7 @@ body {
     height: 20vw;
     top: 18vw;
     left: 18vw;
-    background: linear-gradient(120deg, #ffffff0e 30%, #ffffff23 38%, #f0f0f032 40%, #e5e5e50c 40%);
-    background-size: 200% 100%;
+    background: transparent;    background-size: 200% 100%;
     background-position: 100% 0;
     animation: load 2s infinite;
 }
@@ -142,7 +141,7 @@ body {
     height: 20vw;
     top: 18vw;
     left: 62vw;
-    background: linear-gradient(120deg, #ffffff0e 30%, #ffffff23 38%, #f0f0f032 40%, #e5e5e50c 40%);
+    background: transparent;
     background-size: 200% 100%;
     background-position: 100% 0;
     animation: load 2s infinite;
@@ -166,10 +165,25 @@ body {
     border-top-right-radius: 3vw;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
 }
 
 #downbar img {
     width: 2.5vw;
+}
+
+#downbar span {
+    color: rgb(207, 207, 209);
+    font-size: 1.1vw;
+}
+
+#downbar > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    height: 4.5vw;
 }
 
 #buttons > button {
@@ -262,7 +276,7 @@ body {
 #valores {
     position: absolute;
     top: -1vw;
-    left: 10vw;
+    left: 9vw;
     font-size: 1.1vw;
     font-weight: 400;
     color: rgb(207, 207, 209);
@@ -297,6 +311,7 @@ progress[value] {
     appearance: none;
     border: none;
     height: .5em;
+    width: 8vw;
     border-radius: 10em;
 }
 
@@ -356,8 +371,9 @@ progress[value]::-moz-progress-bar {
 
 #values {
     position: absolute;
+
     top: 3vw;
-    left: 15vw;
+    left: 13vw;
     color: rgb(207, 207, 209);
     font-size: 1.1vw;
     font-weight: 700;

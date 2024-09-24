@@ -58,6 +58,7 @@ body {
     align-items: center;
     flex-direction: column;
     border: 1px solid white;
+    border-radius: 3px ;
     
 }
 
@@ -68,6 +69,10 @@ body {
     font-weight: bold;
     text-transform: uppercase;
     
+}
+
+iframe{
+    border-radius: 3px;
 }
 @keyframes load{
     100%{

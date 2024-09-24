@@ -108,7 +108,7 @@ console.log(data[0].flickr_images[1]);
                         
                     <article id="section__information__1" class="section__information__1">
                         <mi-div class="load" style="height: 150px;">
-                            <marquee behavior="" direction="" scrollamount="20"  >
+                            <marquee behavior="" direction="" scrollamount="15"  >
 
                                 
                                 

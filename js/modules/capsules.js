@@ -1,60 +1,163 @@
+let bloque1 = document.getElementById("bloque1")
+let bloque2 = document.getElementById("bloque2")
+let bloque3 = document.getElementById("bloque3")
+let bloque4 = document.getElementById("bloque4")
+let bloque5 = document.getElementById("bloque5")
+
+let num = 1
+
+
+
 document.addEventListener("DOMContentLoaded", () =>{
     let variable = 0
     todo(variable)
+})
+
+document.getElementById("flecha2").addEventListener("click", () => {
+    bloque1.style.display = "none"
+    bloque2.style.display = "block"
+    bloque3.style.display = "block"
     
 
 })
+
+document.getElementById("flecha1").addEventListener("click", ()=> {
+    bloque1.style.display = "block"
+    bloque2.style.display = "none"
+})
+
 
 document.getElementById("uno").addEventListener("click", () => {
     let variable = 0
     todo(variable)
-    console.log("jesus " + variable);
-    
     })
-
-
-
-
-
-
-
 document.getElementById("dos").addEventListener("click", () => {
 let variable = 0
 variable =  1
 todo(variable)
-console.log("jesus " + variable);
-
-
 })
-
 document.getElementById("tres").addEventListener("click", () => {
-
 let variable = 0
 variable =  2
-
 todo(variable)
-console.log(variable);
-
 })
-
 document.getElementById("cuatro").addEventListener("click", () => {
-
-    let variable = 0
+let variable = 0
 variable =  3
-
 todo(variable)
-console.log(variable);
-
 })
+document.getElementById("cinco").addEventListener("click", () => {
+    let variable = 0
+    variable =  4
+    todo(variable)
+})
+document.getElementById("seis").addEventListener("click", () => {
+    let variable = 0
+    variable =  5
+    todo(variable)
+})
+document.getElementById("siete").addEventListener("click", () => {
+    let variable = 0
+    variable =  6
+    todo(variable)
+})
+document.getElementById("ocho").addEventListener("click", () => {
+    let variable = 0
+    variable =  7
+    todo(variable)
+})
+document.getElementById("nueve").addEventListener("click", () => {
+    let variable = 0
+    variable =  8
+    todo(variable)
+})
+document.getElementById("diez").addEventListener("click", () => {
+    let variable = 0
+    variable =  9
+    todo(variable)
+})
+document.getElementById("once").addEventListener("click", () => {
+    let variable = 0
+    variable =  10
+    todo(variable)
+})
+document.getElementById("doce").addEventListener("click", () => {
+    let variable = 0
+    variable =  11
+    todo(variable)
+})
+document.getElementById("trece").addEventListener("click", () => {
+    let variable = 0
+    variable =  12
+    todo(variable)
+})
+document.getElementById("catorce").addEventListener("click", () => {
+    let variable = 0
+    variable =  13
+    todo(variable)
+})
+document.getElementById("quince").addEventListener("click", () => {
+    let variable = 0
+    variable =  14
+    todo(variable)
+})
+document.getElementById("dieciseis").addEventListener("click", () => {
+    let variable = 0
+    variable =  15
+    todo(variable)
+})
+document.getElementById("diecisiete").addEventListener("click", () => {
+    let variable = 0
+    variable =  16
+    todo(variable)
+})
+document.getElementById("dieciocho").addEventListener("click", () => {
+    let variable = 0
+    variable =  17
+    todo(variable)
+})
+document.getElementById("diecinueve").addEventListener("click", () => {
+    let variable = 0
+    variable =  18
+    todo(variable)
+})
+document.getElementById("veinte").addEventListener("click", () => {
+    let variable = 0
+    variable =  19
+    todo(variable)
+})
+document.getElementById("ventiuno").addEventListener("click", () => {
+    let variable = 0
+    variable =  20
+    todo(variable)
+})
+document.getElementById("ventidos").addEventListener("click", () => {
+    let variable = 0
+    variable =  21
+    todo(variable)
+})
+document.getElementById("ventitres").addEventListener("click", () => {
+    let variable = 0
+    variable =  22
+    todo(variable)
+})
+document.getElementById("venticuatro").addEventListener("click", () => {
+    let variable = 0
+    variable =  23
+    todo(variable)
+})
+document.getElementById("venticinco").addEventListener("click", () => {
+    let variable = 0
+    variable =  24
+    todo(variable)
+})
+
 let miheader = document.querySelector(".header")
 
 
 
 function todo(variable) {
-     
-
-    
-            
+        
     fetch(`https://api.spacexdata.com/v4/capsules`)
         .then(res => res.json())
         .then(data => {
@@ -63,53 +166,49 @@ function todo(variable) {
                 miheader.innerHTML = 
                 `
                 <mi-header class="header">
-                <div id="header__title" class="header__title">
-                    <div class="load">${data[variable].serial}</div>
-                </div>
+                    <div id="header__title" class="header__title">
+                        <div class="load"><p>Serial: </p>${data[variable].serial}</div>
+                    </div>
                 </mi-header>
 
 
                 <main class="main">
         <nav class="nav__description">
             <div id="description__item" class="description__item">
-                <div class="load">${data[variable].type}</div>
+                <div class="load">${data[variable].status}</div>
+                
                 <div class="load"></div>
-                <div class="load"></div>
-                <div class="load"></div>
-                <div class="load"></div>
-                <div class="load">${data[variable].reuse_count}</div>
             </div>
             <div class="description__buttom">
-                <!-- <a href="#">a</a>
-                <a href="#">b</a> -->
+                
             </div>
         </nav>
         <section class="main__section">
 
                     <mi-top>
                         <article id="section__information__1" class="section__information__1">
-                            <div class="load" style="height: 150px;">${data[variable].status}</div>
+                            <div class="load" style="height: 150px;"><p>Last Update: </p> ${data[variable].last_update} <p>Status: </p>${data[variable].status}</div>
                         </article>
                     </mi-top>
 
             <article class="section__information__container">
                 <div class="section__information__2">
                     <div>
-                        <div class="load" style="height: 150px;"></div>
+                        <div class="load" style="height: 150px;"><p>Water Landings: </p>${data[variable].water_landings}</div>
                     </div>
                     <div id="information__table__1" class="information__table__1">
-                        <div class="load" style="height: 160px;"></div>
+                        <div class="load" style="height: 160px;"><p>Type: </p>${data[variable].type}</div>
                     </div>
                 </div>
                 <div id="section__image" class="section__image">
-                    <div class="load" style="height: 350px">${data[variable].last_update}</div>
+                    <div class="load" style="height: 350px"><video src="./storage/video/capsula1.mp4" autoplay muted loop></video></div>
                 </div>
                 <div class="section__information__3">
                     <div>
-                        <div class="load" style="height: 150px;"></div>
+                        <div class="load" style="height: 150px;"><p>Reuse Count: </p>${data[variable].reuse_count}</div>
                     </div>
                     <div id="information__table__2" class="information__table__2">
-                        <div class="load" style="height: 160px;"></div>
+                        <div class="load" style="height: 160px;"><p>Land Landings: </p>${data[variable].land_landings}</div>
                     </div>
                 </div>
             </article>
@@ -144,11 +243,9 @@ function todo(variable) {
         </section>
         <nav class="nav__information">
             <div id="information__2" class="information__item">
-                <div class="load">${data[variable].water_landings}</div>
                 <div class="load"></div>
+                
                 <div class="load"></div>
-                <div class="load"></div>
-                <div class="load">${data[variable].land_landings}</div>
             </div>
             <div id="paginacion" class="information__buttom"></div>
         </nav>

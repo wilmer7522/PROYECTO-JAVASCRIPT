@@ -5,407 +5,821 @@
     src: url(../storage/font/Roboto/Roboto-Regular.ttf);
 }
 
-body {
-    overflow: hidden;
-}
+@media (max-width: 1920px) and (min-width: 801px) {
+    body {
+        overflow: hidden;
+    }
 
-* {
-    font-family: "Roboto-Regular";
-}
+    * {
+        font-family: "Roboto-Regular";
+    }
 
-*::-webkit-scrollbar {
-    height: 12px;
-    width: 10px;
-}
+    *::-webkit-scrollbar {
+        height: 12px;
+        width: 10px;
+    }
 
-*::-webkit-scrollbar-track {
-    background-color: var(--color--five);
-}
+    *::-webkit-scrollbar-track {
+        background-color: var(--color--five);
+    }
 
-*::-webkit-scrollbar-track:hover,
-*::-webkit-scrollbar-thumb:hover {
-    cursor: pointer;
-}
+    *::-webkit-scrollbar-track:hover,
+    *::-webkit-scrollbar-thumb:hover {
+        cursor: pointer;
+    }
 
-*::-webkit-scrollbar-thumb {
+    *::-webkit-scrollbar-thumb {
 
-    border: 1px solid var(--color--five);
-    background-color: var(--color--one--rgba);
-}
+        border: 1px solid var(--color--five);
+        background-color: var(--color--one--rgba);
+    }
 
-#container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 50vw;
-    background: linear-gradient(#14162C, #000000);
-}
+    #container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 50vw;
+        background: linear-gradient(#14162C, #000000);
+    }
 
-#topbar {
-    position: absolute;
-    top: 0;
-    width: 100vw;
-    height: 5vw;
-    background: transparent;    
-    background-size: 200% 100%;
-    background-position: 100% 0;
-    animation: load 2s infinite;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: justify;
-    font-size: 2vw;
-}
+    #topbar {
+        position: absolute;
+        top: 0;
+        width: 100vw;
+        height: 5vw;
+        background: transparent;    
+        background-size: 200% 100%;
+        background-position: 100% 0;
+        animation: load 2s infinite;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: justify;
+        font-size: 2vw;
+    }
 
-#rightbar {
-    position: absolute;
-    top: 6vw;
-    left: 1vw;
-    width: 15vw;
-    height: 33vw;
-    background: transparent;    
-    background-size: 200% 100%;
-    background-position: 100% 0;
-    animation: load 2s infinite;
-    overflow-y: auto;
-    padding-right: 1vw;
-}
+    #rightbar {
+        position: absolute;
+        top: 6vw;
+        left: 1vw;
+        width: 15vw;
+        height: 33vw;
+        background: transparent;    
+        background-size: 200% 100%;
+        background-position: 100% 0;
+        animation: load 2s infinite;
+        overflow-y: auto;
+        padding-right: 1vw;
+    }
 
-#leftbar {
-    position: absolute;
-    top: 6vw;
-    right: 1vw;
-    width: 15vw;
-    height: 33vw;
-    background: transparent;    
-    background-size: 200% 100%;
-    background-position: 100% 0;
-    animation: load 2s infinite;
-    overflow-y: auto;
-}
+    #leftbar {
+        position: absolute;
+        top: 6vw;
+        right: 1vw;
+        width: 15vw;
+        height: 33vw;
+        background: transparent;    
+        background-size: 200% 100%;
+        background-position: 100% 0;
+        animation: load 2s infinite;
+        overflow-y: auto;
+    }
 
-#centerbar {
-    position: absolute;
-    top: 20vw;
-    left: 40.5vw;
-    width: 20vw;
-    height: 15vw;
-    background: transparent;    
-    background-size: 200% 100%;
-    background-position: 100% 0;
-    animation: load 2s infinite;
-    overflow-x: scroll;
-    display: flex;
-    flex-direction: row;
-    border-radius: 1vw;
-    gap: 1vw;
-}
+    #centerbar {
+        position: absolute;
+        top: 20vw;
+        left: 40.5vw;
+        width: 20vw;
+        height: 15vw;
+        background: transparent;    
+        background-size: 200% 100%;
+        background-position: 100% 0;
+        animation: load 2s infinite;
+        overflow-x: scroll;
+        display: flex;
+        flex-direction: row;
+        border-radius: 1vw;
+        gap: 1vw;
+    }
 
-#centerbar img{
-    width: 20vw;
-    border-radius: 1vw;
-    object-fit: cover;
-    box-shadow: 0px 0px 10px var(--color--one);
-}
+    #centerbar img{
+        width: 20vw;
+        border-radius: 1vw;
+        object-fit: cover;
+        box-shadow: 0px 0px 10px var(--color--one);
+    }
 
-#supcenter {
-    position: absolute;
-    width: 65vw;
-    height: 10vw;
-    top: 6vw;
-    left: 18vw;
-    background: transparent;
-    background-size: 200% 100%;
-    background-position: 100% 0;
-    animation: load 2s infinite;
-    display: flex;
-    justify-content: space-around;
-}
+    #supcenter {
+        position: absolute;
+        width: 65vw;
+        height: 10vw;
+        top: 6vw;
+        left: 18vw;
+        background: transparent;
+        background-size: 200% 100%;
+        background-position: 100% 0;
+        animation: load 2s infinite;
+        display: flex;
+        justify-content: space-around;
+    }
 
-#rightcenterbar {
-    position: absolute;
-    width: 21vw;
-    height: 20vw;
-    top: 18vw;
-    left: 18vw;
-    background: transparent;    background-size: 200% 100%;
-    background-position: 100% 0;
-    animation: load 2s infinite;
-}
+    #rightcenterbar {
+        position: absolute;
+        width: 21vw;
+        height: 20vw;
+        top: 18vw;
+        left: 18vw;
+        background: transparent;    background-size: 200% 100%;
+        background-position: 100% 0;
+        animation: load 2s infinite;
+    }
 
-#leftcenterbar {
-    position: absolute;
-    width: 21vw;
-    height: 20vw;
-    top: 18vw;
-    left: 62vw;
-    background: transparent;
-    background-size: 200% 100%;
-    background-position: 100% 0;
-    animation: load 2s infinite;
-}
+    #leftcenterbar {
+        position: absolute;
+        width: 21vw;
+        height: 20vw;
+        top: 18vw;
+        left: 62vw;
+        background: transparent;
+        background-size: 200% 100%;
+        background-position: 100% 0;
+        animation: load 2s infinite;
+    }
 
 
-@keyframes load{
-    100%{
-        background-position: -100% 0; /*animacion desplazamiento*/
+    @keyframes load{
+        100%{
+            background-position: -100% 0; /*animacion desplazamiento*/
+        }
+    }
+
+    #downbar {
+        position: absolute;
+        width: 35vw;
+        height: 4.5vw;
+        top: 45.5vw;
+        left: 31.5vw;
+        background-color: #14162C;
+        border-top-left-radius: 3vw;
+        border-top-right-radius: 3vw;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #downbar img {
+        width: 2vw;
+    }
+
+    #downbar span {
+        color: rgb(207, 207, 209);
+        font-size: 0.9vw;
+        font-family: "Roboto-Regular";
+    }
+
+    #downbar > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        height: 4.5vw;
+    }
+
+    #downbar a {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1vw;
+    }
+
+    #buttons > button {
+        width: 2.5vw;
+        height: 2.5vw;
+        background-color: transparent;
+        color: white;
+        margin-top: -10vw;
+        gap: 0vw;
+        border: none;
+        cursor: pointer;
+        font-size: 1.2vw;
+    }
+
+    #buttons {
+        position: absolute;
+        top: 46vw;
+        left: 85vw;
+    }
+
+    #buttons >button:hover {
+        background-color: var(--color--one--rgba);
+    }
+
+    #rightbar img {
+        width: 2.5vw;
+    }
+
+    #rightbar p {
+        margin-left: 3vw;
+    }
+
+    #country {
+        margin-top: -2vw;
+        font-weight: 700;
+        font-size: 1.3vw;
+        color: white;
+    }
+
+    #descripcion {
+        margin-top: -2.5vw;
+        font-weight: 400;
+        font-size: 0.9vw;
+        color: rgb(207, 207, 209);
+    }
+
+    #tittledes {
+        margin-top: -3.5vw;
+        font-weight: 700;
+        font-size: 1.3vw;
+        color: white;
+    }
+
+    #costo {
+        margin-top: -2.5vw;
+        font-weight: 400;
+        font-size: 0.9vw;
+        color: rgb(207, 207, 209);
+    }
+
+    #tittlecost {
+        margin-top: -3.5vw;
+        font-weight: 700;
+        font-size: 1.3vw;
+        color: white;
+    }
+
+    #fly {
+        margin-top: -1vw;
+        font-weight: 400;
+        font-size: 0.9vw;
+        color: rgb(207, 207, 209);
+    }
+
+    #tittlelink {
+        margin-top: -3.5vw;
+        font-weight: 700;
+        font-size: 1.3vw;
+        color: white;
+    }
+
+    #link {
+        margin-left: 3vw;
+        font-weight: 400;
+        font-size: 0.9vw;
+        color: rgb(207, 207, 209);
+        text-decoration: none;
+    }
+
+    #valores {
+        position: absolute;
+        top: -1vw;
+        left: 9vw;
+        font-size: 1.1vw;
+        font-weight: 400;
+        color: rgb(207, 207, 209);
+    }
+
+    #valores > div {
+        margin-top: 1vw;
+    }
+
+    #barras {
+        position: absolute;
+        top: -1vw;
+        font-size: 1.1vw;
+        font-weight: 400;
+        color: rgb(207, 207, 209);
+    }
+
+    #barras > div {
+        margin-top: 1vw;
+    }
+
+    #progress1::-webkit-progress-value {
+        background: green;
+    }
+
+    #progress2::-webkit-progress-value {
+        background: yellow;
+    }
+
+    #progress3::-webkit-progress-value {
+        background: red;
+    }
+
+    #progress4::-webkit-progress-value {
+        background: blue;
+    }
+
+    #progress5::-webkit-progress-value {
+        background: purple;
+    }
+
+    #progress6::-webkit-progress-value {
+        background: orange;
+    }
+    progress[value]::-webkit-progress-value {
+        border-radius: 10em;
+    }
+
+    progress[value] {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        border: none;
+        height: .5em;
+        width: 8vw;
+        border-radius: 10em;
+    }
+
+    progress[value]::-webkit-progress-bar {
+        border-radius: 10em;
+        height: .5em;
+        background: var(--background);
+    }
+
+    #item_progress1 {
+        color: var(--color--five);
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 10vw;
+        height: 10vw;
+        font-size: 1vw;
+        border-radius: 50vw;
+    }
+
+    #item_progress2 {
+        color: var(--color--five);
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 10vw;
+        height: 10vw;
+        font-size: 1vw;
+        border-radius: 50vw;
+    }
+
+
+    #information {
+        margin-left: 2vw;
+        font-weight: 700;
+        font-size: 1.3vw;
+        color: rgb(207, 207, 209);
+        border-bottom: 0.1vw solid rgb(207, 207, 209);
+    }
+
+    #types {
+        position: absolute;
+        top: 3vw;
+        left: 2vw;
+        color: rgb(207, 207, 209);
+        font-size: 1.1vw;
+        font-weight: 400;
+    }
+
+    #values {
+        position: absolute;
+
+        top: 3vw;
+        left: 13vw;
+        color: rgb(207, 207, 209);
+        font-size: 1.1vw;
+        font-weight: 700;
+    }
+
+    #engine {
+        margin-left: 2vw;
+        font-weight: 700;
+        font-size: 1.3vw;
+        color: rgb(207, 207, 209);
+        border-bottom: 0.1vw solid rgb(207, 207, 209);
     }
 }
 
-#downbar {
-    position: absolute;
-    width: 35vw;
-    height: 4.5vw;
-    top: 45.5vw;
-    left: 31.5vw;
-    background-color: #14162C;
-    border-top-left-radius: 3vw;
-    border-top-right-radius: 3vw;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
+@media (max-width: 800px) {
 
-#downbar img {
-    width: 2vw;
-}
+    * {
+        font-family: "Roboto-Regular";
+    }
 
-#downbar span {
-    color: rgb(207, 207, 209);
-    font-size: 0.9vw;
-    font-family: "Roboto-Regular";
-}
+    *::-webkit-scrollbar {
+        height: 12px;
+        width: 10px;
+    }
 
-#downbar > div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    height: 4.5vw;
-}
+    *::-webkit-scrollbar-track {
+        background-color: var(--color--five);
+    }
 
-#downbar a {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 1vw;
-}
+    *::-webkit-scrollbar-track:hover,
+    *::-webkit-scrollbar-thumb:hover {
+        cursor: pointer;
+    }
 
-#buttons > button {
-    width: 2.5vw;
-    height: 2.5vw;
-    background-color: transparent;
-    color: white;
-    margin-top: -10vw;
-    gap: 0vw;
-    border: none;
-    cursor: pointer;
-    font-size: 1.2vw;
-}
+    *::-webkit-scrollbar-thumb {
 
-#buttons {
-    position: absolute;
-    top: 46vw;
-    left: 85vw;
-}
+        border: 1px solid var(--color--five);
+        background-color: var(--color--one--rgba);
+    }
 
-#buttons >button:hover {
-    background-color: var(--color--one--rgba);
-}
+    #container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 300vw;
+        background: linear-gradient(#14162C, #000000);
+        overflow-x: hidden;
+    }
 
-#rightbar img {
-    width: 2.5vw;
-}
+    #topbar {
+        position: absolute;
+        top: 100vw;
+        left: 5vw;
+        width: 100vw;
+        height: 5vw;
+        background: transparent;    
+        background-size: 200% 100%;
+        background-position: 100% 0;
+        animation: load 2s infinite;
+        display: flex;
+        align-items: center;
+        
+        color: white;
+        text-align: justify;
+        font-size: 10vw;
+    }
 
-#rightbar p {
-    margin-left: 3vw;
-}
+    #rightbar {
+        position: absolute;
+        top: 100vw;
+        left: 1vw;
+        width: 15vw;
+        height: 33vw;
+        background: transparent;    
+        background-size: 200% 100%;
+        background-position: 100% 0;
+        animation: load 2s infinite;
+        overflow-y: auto;
+        padding-right: 1vw;
+    }
 
-#country {
-    margin-top: -2vw;
-    font-weight: 700;
-    font-size: 1.3vw;
-    color: white;
-}
+    #leftbar {
+        position: absolute;
+        top: 100vw;
+        right: 1vw;
+        width: 15vw;
+        height: 33vw;
+        background: transparent;    
+        background-size: 200% 100%;
+        background-position: 100% 0;
+        animation: load 2s infinite;
+        overflow-y: auto;
+    }
 
-#descripcion {
-    margin-top: -2.5vw;
-    font-weight: 400;
-    font-size: 0.9vw;
-    color: rgb(207, 207, 209);
-}
+    #centerbar {
+        position: absolute;
+        top: 0vw;
+        left: 0vw;
+        width: 100vw;
+        height: 90vw;
+        background: transparent;    
+        background-size: 200% 100%;
+        background-position: 100% 0;
+        animation: load 2s infinite;
+        overflow-x: scroll;
+        display: flex;
+        flex-direction: row;
+        border-radius: 1vw;
+        gap: 1vw;
+    }
 
-#tittledes {
-    margin-top: -3.5vw;
-    font-weight: 700;
-    font-size: 1.3vw;
-    color: white;
-}
+    #centerbar img{
+        width: 100vw;
+        height: 90vw;
+        border-radius: 5vw;
+        box-shadow: 0px 0px 10px var(--color--one);
+        mask-image: linear-gradient(black, white 80%);
+    }
 
-#costo {
-    margin-top: -2.5vw;
-    font-weight: 400;
-    font-size: 0.9vw;
-    color: rgb(207, 207, 209);
-}
+    #centerbar::-webkit-scrollbar {
+        display: none;
+    }
 
-#tittlecost {
-    margin-top: -3.5vw;
-    font-weight: 700;
-    font-size: 1.3vw;
-    color: white;
-}
+    #supcenter {
+        position: absolute;
+        width: 65vw;
+        height: 10vw;
+        top: 106vw;
+        left: 18vw;
+        background: transparent;
+        background-size: 200% 100%;
+        background-position: 100% 0;
+        animation: load 2s infinite;
+        display: flex;
+        justify-content: space-around;
+    }
 
-#fly {
-    margin-top: -1vw;
-    font-weight: 400;
-    font-size: 0.9vw;
-    color: rgb(207, 207, 209);
-}
+    #rightcenterbar {
+        position: absolute;
+        width: 21vw;
+        height: 20vw;
+        top: 118vw;
+        left: 18vw;
+        background: transparent;    background-size: 200% 100%;
+        background-position: 100% 0;
+        animation: load 2s infinite;
+    }
 
-#tittlelink {
-    margin-top: -3.5vw;
-    font-weight: 700;
-    font-size: 1.3vw;
-    color: white;
-}
-
-#link {
-    margin-left: 3vw;
-    font-weight: 400;
-    font-size: 0.9vw;
-    color: rgb(207, 207, 209);
-    text-decoration: none;
-}
-
-#valores {
-    position: absolute;
-    top: -1vw;
-    left: 9vw;
-    font-size: 1.1vw;
-    font-weight: 400;
-    color: rgb(207, 207, 209);
-}
-
-#valores > div {
-    margin-top: 1vw;
-}
-
-#barras {
-    position: absolute;
-    top: -1vw;
-    font-size: 1.1vw;
-    font-weight: 400;
-    color: rgb(207, 207, 209);
-}
-
-#barras > div {
-    margin-top: 1vw;
-}
-
-#progress1::-webkit-progress-value {
-    background: green;
-}
-
-#progress2::-webkit-progress-value {
-    background: yellow;
-}
-
-#progress3::-webkit-progress-value {
-    background: red;
-}
-
-#progress4::-webkit-progress-value {
-    background: blue;
-}
-
-#progress5::-webkit-progress-value {
-    background: purple;
-}
-
-#progress6::-webkit-progress-value {
-    background: orange;
-}
-progress[value]::-webkit-progress-value {
-    border-radius: 10em;
-}
-
-progress[value] {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    border: none;
-    height: .5em;
-    width: 8vw;
-    border-radius: 10em;
-}
-
-progress[value]::-webkit-progress-bar {
-    border-radius: 10em;
-    height: .5em;
-    background: var(--background);
-}
-
-#item_progress1 {
-    color: var(--color--five);
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 10vw;
-    height: 10vw;
-    font-size: 1vw;
-    border-radius: 50vw;
-}
-
-#item_progress2 {
-    color: var(--color--five);
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 10vw;
-    height: 10vw;
-    font-size: 1vw;
-    border-radius: 50vw;
-}
+    #leftcenterbar {
+        position: absolute;
+        width: 21vw;
+        height: 20vw;
+        top: 118vw;
+        left: 62vw;
+        background: transparent;
+        background-size: 200% 100%;
+        background-position: 100% 0;
+        animation: load 2s infinite;
+    }
 
 
-#information {
-    margin-left: 2vw;
-    font-weight: 700;
-    font-size: 1.3vw;
-    color: rgb(207, 207, 209);
-    border-bottom: 0.1vw solid rgb(207, 207, 209);
-}
+    @keyframes load{
+        100%{
+            background-position: -100% 0; /*animacion desplazamiento*/
+        }
+    }
 
-#types {
-    position: absolute;
-    top: 3vw;
-    left: 2vw;
-    color: rgb(207, 207, 209);
-    font-size: 1.1vw;
-    font-weight: 400;
-}
+    #downbar {
+        position: absolute;
+        width: 35vw;
+        height: 4.5vw;
+        top: 145.5vw;
+        left: 31.5vw;
+        background-color: #14162C;
+        border-top-left-radius: 3vw;
+        border-top-right-radius: 3vw;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
 
-#values {
-    position: absolute;
+    #downbar img {
+        width: 2vw;
+    }
 
-    top: 3vw;
-    left: 13vw;
-    color: rgb(207, 207, 209);
-    font-size: 1.1vw;
-    font-weight: 700;
-}
+    #downbar span {
+        color: rgb(207, 207, 209);
+        font-size: 0.9vw;
+        font-family: "Roboto-Regular";
+    }
 
-#engine {
-    margin-left: 2vw;
-    font-weight: 700;
-    font-size: 1.3vw;
-    color: rgb(207, 207, 209);
-    border-bottom: 0.1vw solid rgb(207, 207, 209);
+    #downbar > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        height: 4.5vw;
+    }
+
+    #downbar a {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1vw;
+    }
+
+    #buttons > button {
+        width: 2.5vw;
+        height: 2.5vw;
+        background-color: transparent;
+        color: white;
+        margin-top: -10vw;
+        gap: 0vw;
+        border: none;
+        cursor: pointer;
+        font-size: 1.2vw;
+    }
+
+    #buttons {
+        position: absolute;
+        top: 146vw;
+        left: 85vw;
+    }
+
+    #buttons >button:hover {
+        background-color: var(--color--one--rgba);
+    }
+
+    #rightbar img {
+        width: 2.5vw;
+    }
+
+    #rightbar p {
+        margin-left: 3vw;
+    }
+
+    #country {
+        margin-top: -2vw;
+        font-weight: 700;
+        font-size: 1.3vw;
+        color: white;
+    }
+
+    #descripcion {
+        margin-top: -2.5vw;
+        font-weight: 400;
+        font-size: 0.9vw;
+        color: rgb(207, 207, 209);
+    }
+
+    #tittledes {
+        margin-top: -3.5vw;
+        font-weight: 700;
+        font-size: 1.3vw;
+        color: white;
+    }
+
+    #costo {
+        margin-top: -2.5vw;
+        font-weight: 400;
+        font-size: 0.9vw;
+        color: rgb(207, 207, 209);
+    }
+
+    #tittlecost {
+        margin-top: -3.5vw;
+        font-weight: 700;
+        font-size: 1.3vw;
+        color: white;
+    }
+
+    #fly {
+        margin-top: -1vw;
+        font-weight: 400;
+        font-size: 0.9vw;
+        color: rgb(207, 207, 209);
+    }
+
+    #tittlelink {
+        margin-top: -3.5vw;
+        font-weight: 700;
+        font-size: 1.3vw;
+        color: white;
+    }
+
+    #link {
+        margin-left: 3vw;
+        font-weight: 400;
+        font-size: 0.9vw;
+        color: rgb(207, 207, 209);
+        text-decoration: none;
+    }
+
+    #valores {
+        position: absolute;
+        top: -1vw;
+        left: 9vw;
+        font-size: 1.1vw;
+        font-weight: 400;
+        color: rgb(207, 207, 209);
+    }
+
+    #valores > div {
+        margin-top: 1vw;
+    }
+
+    #barras {
+        position: absolute;
+        top: -1vw;
+        font-size: 1.1vw;
+        font-weight: 400;
+        color: rgb(207, 207, 209);
+    }
+
+    #barras > div {
+        margin-top: 1vw;
+    }
+
+    #progress1::-webkit-progress-value {
+        background: green;
+    }
+
+    #progress2::-webkit-progress-value {
+        background: yellow;
+    }
+
+    #progress3::-webkit-progress-value {
+        background: red;
+    }
+
+    #progress4::-webkit-progress-value {
+        background: blue;
+    }
+
+    #progress5::-webkit-progress-value {
+        background: purple;
+    }
+
+    #progress6::-webkit-progress-value {
+        background: orange;
+    }
+    progress[value]::-webkit-progress-value {
+        border-radius: 10em;
+    }
+
+    progress[value] {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        border: none;
+        height: .5em;
+        width: 8vw;
+        border-radius: 10em;
+    }
+
+    progress[value]::-webkit-progress-bar {
+        border-radius: 10em;
+        height: .5em;
+        background: var(--background);
+    }
+
+    #item_progress1 {
+        color: var(--color--five);
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 10vw;
+        height: 10vw;
+        font-size: 1vw;
+        border-radius: 50vw;
+    }
+
+    #item_progress2 {
+        color: var(--color--five);
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 10vw;
+        height: 10vw;
+        font-size: 1vw;
+        border-radius: 50vw;
+    }
+
+
+    #information {
+        margin-left: 2vw;
+        font-weight: 700;
+        font-size: 1.3vw;
+        color: rgb(207, 207, 209);
+        border-bottom: 0.1vw solid rgb(207, 207, 209);
+    }
+
+    #types {
+        position: absolute;
+        top: 3vw;
+        left: 2vw;
+        color: rgb(207, 207, 209);
+        font-size: 1.1vw;
+        font-weight: 400;
+    }
+
+    #values {
+        position: absolute;
+
+        top: 3vw;
+        left: 13vw;
+        color: rgb(207, 207, 209);
+        font-size: 1.1vw;
+        font-weight: 700;
+    }
+
+    #engine {
+        margin-left: 2vw;
+        font-weight: 700;
+        font-size: 1.3vw;
+        color: rgb(207, 207, 209);
+        border-bottom: 0.1vw solid rgb(207, 207, 209);
+    }
+
 }

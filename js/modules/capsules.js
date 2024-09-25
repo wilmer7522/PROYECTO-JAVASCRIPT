@@ -12,21 +12,30 @@ document.addEventListener("DOMContentLoaded", () =>{
     let variable = 0
     todo(variable)
 })
+//contador de bloques
+let bloques = 1;
 
 document.getElementById("flecha2").addEventListener("click", () => {
-    bloque1.style.display = "none"
-    bloque2.style.display = "block"
-    bloque3.style.display = "block"
+    document.getElementById(`bloque${bloques}`).style.display = 'none';
+    bloques += 1
+    if (bloques > 5){ 
+        bloques = 1};
+    document.getElementById(`bloque${bloques}`).style.display = 'block';
+
     
 
 })
 
 document.getElementById("flecha1").addEventListener("click", ()=> {
-    bloque1.style.display = "block"
-    bloque2.style.display = "none"
+    document.getElementById(`bloque${bloques}`).style.display = 'none';
+    bloques -= 1
+    if (bloques < 1){
+        bloques = 5};
+    document.getElementById(`bloque${bloques}`).style.display = 'block';
+    
 })
 
-
+//botones con numeros
 document.getElementById("uno").addEventListener("click", () => {
     let variable = 0
     todo(variable)
@@ -167,18 +176,14 @@ function todo(variable) {
                 `
                 <mi-header class="header">
                     <div id="header__title" class="header__title">
-                        <div class="load"><p>Serial: </p>${data[variable].serial}</div>
+                        <div class="load serial"><p>Serial: </p>${data[variable].serial}</div>
                     </div>
                 </mi-header>
 
 
                 <main class="main">
         <nav class="nav__description">
-            <div id="description__item" class="description__item">
-                <div class="load">${data[variable].status}</div>
-                
-                <div class="load"></div>
-            </div>
+            
             <div class="description__buttom">
                 
             </div>
@@ -201,7 +206,7 @@ function todo(variable) {
                     </div>
                 </div>
                 <div id="section__image" class="section__image">
-                    <div class="load" style="height: 350px"><video src="./storage/video/capsula1.mp4" autoplay muted loop></video></div>
+                    <div class="load" style="height: 350px"><marquee behavior="" direction="" scrollamount="15"  ><video src="./storage/video/capsula1.mp4" autoplay muted loop></video></marquee></div>
                 </div>
                 <div class="section__information__3">
                     <div>
@@ -242,11 +247,7 @@ function todo(variable) {
             </footer>
         </section>
         <nav class="nav__information">
-            <div id="information__2" class="information__item">
-                <div class="load"></div>
-                
-                <div class="load"></div>
-            </div>
+            
             <div id="paginacion" class="information__buttom"></div>
         </nav>
                 

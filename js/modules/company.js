@@ -108,7 +108,7 @@ console.log(data[0].flickr_images[1]);
                         
                     <article id="section__information__1" class="section__information__1">
                         <mi-div class="load" style="height: 150px;">
-                            <marquee behavior="" direction="" scrollamount="15"  >
+                            <marquee behavior="" direction="" scrollamount="10" loop="" >
 
                                 
                                 
@@ -169,20 +169,17 @@ fetch(`https://api.spacexdata.com/v4/company`)
      <div class="section__information__2">
 
      
-                    <div>
-                        <div class="load" style="height: 150px;">2</div>
-                    </div>
+                    
                     <div id="information__table__1" class="information__table__1">
                         <div class="load" style="height: 160px;"><a href="${data.links.twitter}" class="twitter" target="_blank">Twitter SpaceX    <img src="storage/img/icons/rocket_mini.svg"></a></div>
                     </div>
                 </div>
                 <div id="section__image" class="section__image">
-                    <div class="load" style="height: 350px"><iframe src="${data.links.website}" width="100%" height="100%"></iframe></div>
+                
+                    <div class="load" style="height: 350px"><a href="${data.links.website}">SpaceX.com</a><iframe src="${data.links.website}" width="100%" height="100%"></iframe></div>
                 </div>
                 <div class="section__information__3">
-                    <div>
-                        <div class="load" style="height: 150px;">5</div>
-                    </div>
+                    
                     <div id="information__table__2" class="information__table__2">
                         <div class="load" style="height: 160px;"><a href="${data.links.elon_twitter}" class="twitter" target="_blank" >Elon Twitter    <img src="storage/img/icons/rocket_mini.svg"></a></div>
                     </div>

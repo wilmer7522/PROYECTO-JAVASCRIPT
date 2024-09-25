@@ -106,6 +106,7 @@ document.getElementById("cuatro").addEventListener("click", () => {
 })
 
 let container = document.getElementById('container')
+let container2 = document.getElementById('container2')
 
 function unique(variable) {
     fetch('https://api.spacexdata.com/v4/rockets')
@@ -146,7 +147,6 @@ function unique(variable) {
                 <p id = "fly">${data[variable].first_flight}</p><br>
                 <img id= "icono4" src="../storage/img/icons/mech.svg" alt="">
                 <p id = "tittlelink"> Read more about the coete</p><br>
-                <a id = "link" href = "${data[variable].wikipedia}">Wikipedia</a>
             </mi-right>
 
             <mi-left id="leftbar" class="no">
@@ -259,5 +259,10 @@ function unique(variable) {
             </mi-leftcenter>
         
             `
+            let wiki = data[variable].wikipedia
+
+            document.getElementById('link').addEventListener('click', () => {
+                window.location.href = wiki;
+            })
     })
 }

@@ -418,39 +418,28 @@
         font-family: "Roboto-Regular";
     }
 
-    *::-webkit-scrollbar {
-        height: 12px;
-        width: 10px;
-    }
-
-    *::-webkit-scrollbar-track {
-        background-color: var(--color--five);
-    }
-
-    *::-webkit-scrollbar-track:hover,
-    *::-webkit-scrollbar-thumb:hover {
-        cursor: pointer;
-    }
-
-    *::-webkit-scrollbar-thumb {
-
-        border: 1px solid var(--color--five);
-        background-color: var(--color--one--rgba);
-    }
-
     #container {
         position: absolute;
         top: 0;
         left: 0;
         width: 100vw;
-        height: 300vw;
+        height: 720vw;
         background: linear-gradient(#14162C, #000000);
+        overflow-x: hidden;
+    }
+
+    #container2 {
+        position: absolute;
+        top: 75vw;
+        left: 0;
+        width: 100vw;
+        height: 500vw;
         overflow-x: hidden;
     }
 
     #topbar {
         position: absolute;
-        top: 100vw;
+        top: 95vw;
         left: 5vw;
         width: 100vw;
         height: 5vw;
@@ -459,8 +448,7 @@
         background-position: 100% 0;
         animation: load 2s infinite;
         display: flex;
-        align-items: center;
-        
+        align-items: center; 
         color: white;
         text-align: justify;
         font-size: 10vw;
@@ -468,24 +456,23 @@
 
     #rightbar {
         position: absolute;
-        top: 100vw;
+        top: 120vw;
         left: 1vw;
-        width: 15vw;
-        height: 33vw;
+        width: 90vw;
+        height: 100vw;
         background: transparent;    
         background-size: 200% 100%;
         background-position: 100% 0;
         animation: load 2s infinite;
-        overflow-y: auto;
         padding-right: 1vw;
     }
 
     #leftbar {
         position: absolute;
-        top: 100vw;
-        right: 1vw;
-        width: 15vw;
-        height: 33vw;
+        top: 430vw;
+        left: 15vw;
+        width: 90vw;
+        height: 100vw;
         background: transparent;    
         background-size: 200% 100%;
         background-position: 100% 0;
@@ -506,16 +493,18 @@
         overflow-x: scroll;
         display: flex;
         flex-direction: row;
-        border-radius: 1vw;
         gap: 1vw;
     }
 
     #centerbar img{
         width: 100vw;
         height: 90vw;
-        border-radius: 5vw;
         box-shadow: 0px 0px 10px var(--color--one);
         mask-image: linear-gradient(black, white 80%);
+        mask-image: linear-gradient(
+        black 80%, 
+        transparent
+        );
     }
 
     #centerbar::-webkit-scrollbar {
@@ -524,24 +513,26 @@
 
     #supcenter {
         position: absolute;
-        width: 65vw;
-        height: 10vw;
-        top: 106vw;
-        left: 18vw;
+        width: 90vw;
+        height: 100vw;
+        top: 300vw;
+        left: 25vw;
         background: transparent;
         background-size: 200% 100%;
         background-position: 100% 0;
         animation: load 2s infinite;
         display: flex;
-        justify-content: space-around;
+        flex-direction: column;
+        justify-content: center;
+        gap: 6vw;
     }
 
     #rightcenterbar {
         position: absolute;
-        width: 21vw;
-        height: 20vw;
-        top: 118vw;
-        left: 18vw;
+        width: 90vw;
+        height: 100vw;
+        top: 520vw;
+        left: 6vw;
         background: transparent;    background-size: 200% 100%;
         background-position: 100% 0;
         animation: load 2s infinite;
@@ -549,10 +540,10 @@
 
     #leftcenterbar {
         position: absolute;
-        width: 21vw;
-        height: 20vw;
-        top: 118vw;
-        left: 62vw;
+        width: 90vw;
+        height: 100vw;
+        top: 610vw;
+        left: 6vw;
         background: transparent;
         background-size: 200% 100%;
         background-position: 100% 0;
@@ -567,26 +558,24 @@
     }
 
     #downbar {
-        position: absolute;
-        width: 35vw;
-        height: 4.5vw;
-        top: 145.5vw;
-        left: 31.5vw;
+        position: fixed;
+        width: 100vw;
+        height: 20vw;
+        top: 186vw;
+        left: 0vw;
         background-color: #14162C;
-        border-top-left-radius: 3vw;
-        border-top-right-radius: 3vw;
         display: flex;
         justify-content: space-around;
         align-items: center;
     }
 
     #downbar img {
-        width: 2vw;
+        width: 7vw;
     }
 
     #downbar span {
         color: rgb(207, 207, 209);
-        font-size: 0.9vw;
+        font-size: 3vw;
         font-family: "Roboto-Regular";
     }
 
@@ -599,28 +588,25 @@
         height: 4.5vw;
     }
 
-    #downbar a {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 1vw;
-    }
 
     #buttons > button {
-        width: 2.5vw;
-        height: 2.5vw;
+        width: 10vw;
+        height: 10vw;
         background-color: transparent;
         color: white;
-        margin-top: -10vw;
-        gap: 0vw;
         border: none;
         cursor: pointer;
-        font-size: 1.2vw;
+        font-size: 2.5vw;
     }
 
     #buttons {
         position: absolute;
-        top: 146vw;
-        left: 85vw;
+        width: 40vw;
+        height: 10vw;
+        display: flex;
+        flex-direction: row;
+        top: 0vw;
+        left: 30vw;
     }
 
     #buttons >button:hover {
@@ -628,11 +614,12 @@
     }
 
     #rightbar img {
-        width: 2.5vw;
+        width: 8vw;
     }
 
     #rightbar p {
-        margin-left: 3vw;
+        margin-left: 10vw;
+        font-size: 5vw;
     }
 
     #country {
@@ -685,36 +672,39 @@
     }
 
     #link {
-        margin-left: 3vw;
+        position: absolute;
+        top: 180vw;
+        left: 11vw;
         font-weight: 400;
-        font-size: 0.9vw;
+        font-size: 5vw;
         color: rgb(207, 207, 209);
         text-decoration: none;
+        z-index: 2;
     }
 
     #valores {
         position: absolute;
         top: -1vw;
-        left: 9vw;
-        font-size: 1.1vw;
+        left: 50vw;
+        font-size: 5vw;
         font-weight: 400;
         color: rgb(207, 207, 209);
     }
 
     #valores > div {
-        margin-top: 1vw;
+        margin-top: 2vw;
     }
 
     #barras {
         position: absolute;
         top: -1vw;
-        font-size: 1.1vw;
+        font-size: 5vw;
         font-weight: 400;
         color: rgb(207, 207, 209);
     }
 
     #barras > div {
-        margin-top: 1vw;
+        margin-top: 2vw;
     }
 
     #progress1::-webkit-progress-value {
@@ -767,9 +757,9 @@
         text-align: center;
         align-items: center;
         flex-wrap: wrap;
-        width: 10vw;
-        height: 10vw;
-        font-size: 1vw;
+        width: 50vw;
+        height: 50vw;
+        font-size: 5vw;
         border-radius: 50vw;
     }
 
@@ -780,46 +770,72 @@
         text-align: center;
         align-items: center;
         flex-wrap: wrap;
-        width: 10vw;
-        height: 10vw;
-        font-size: 1vw;
+        width: 50vw;
+        height: 50vw;
+        font-size: 5vw;
         border-radius: 50vw;
     }
-
 
     #information {
         margin-left: 2vw;
         font-weight: 700;
-        font-size: 1.3vw;
-        color: rgb(207, 207, 209);
-        border-bottom: 0.1vw solid rgb(207, 207, 209);
+        font-size: 5vw;
+        color: black;
+        border: 0.5vw solid #E72D2D;
+        border-radius: 2vw;
+        background-color: rgb(207, 207, 209);
+        display: flex;
+        justify-content: center;
     }
 
     #types {
         position: absolute;
-        top: 3vw;
+        top: 10vw;
         left: 2vw;
         color: rgb(207, 207, 209);
-        font-size: 1.1vw;
+        font-size: 5vw;
         font-weight: 400;
     }
 
     #values {
         position: absolute;
-
-        top: 3vw;
-        left: 13vw;
+        top: 9.5vw;
+        left: 60vw;
         color: rgb(207, 207, 209);
-        font-size: 1.1vw;
+        font-size: 5vw;
         font-weight: 700;
     }
 
     #engine {
         margin-left: 2vw;
         font-weight: 700;
-        font-size: 1.3vw;
-        color: rgb(207, 207, 209);
-        border-bottom: 0.1vw solid rgb(207, 207, 209);
+        font-size: 5vw;
+        color: black;
+        border: 0.5vw solid #E72D2D;
+        border-radius: 2vw;
+        background-color: rgb(207, 207, 209);
+        display: flex;
+        justify-content: center;
+    }
+
+    #icono1{
+        position: absolute;
+        top: -3vw;
+    }
+
+    #icono2{
+        position: absolute;
+        top: 67vw;
+    }
+
+    #icono3{
+        position: absolute;
+        top: 100vw;
+    }
+
+    #icono4{
+        position: absolute;
+        top: 128vw;
     }
 
 }

@@ -39,7 +39,7 @@ body {
     left: 0;
     width: 100vw;
     height: 50vw;
-    background: linear-gradient(#14162C, #191b3fdf);
+    background: linear-gradient(#14162C, #000000);
 }
 
 #topbar {
@@ -156,25 +156,26 @@ body {
 
 #downbar {
     position: absolute;
-    width: 50vw;
-    height: 6vw;
-    top: 43.95vw;
-    left: 25vw;
+    width: 35vw;
+    height: 4.5vw;
+    top: 45.5vw;
+    left: 31.5vw;
     background-color: #14162C;
     border-top-left-radius: 3vw;
     border-top-right-radius: 3vw;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
 }
 
 #downbar img {
-    width: 2.5vw;
+    width: 2vw;
 }
 
 #downbar span {
     color: rgb(207, 207, 209);
-    font-size: 1.1vw;
+    font-size: 0.9vw;
+    font-family: "Roboto-Regular";
 }
 
 #downbar > div {
@@ -304,12 +305,32 @@ body {
     margin-top: 1vw;
 }
 
-progress[value] {
-    --color: var(--color--three);
-    --background: var(--color--one--rgb);
-    background: var(--background);
+#progress1::-webkit-progress-value {
+    background: green;
 }
 
+#progress2::-webkit-progress-value {
+    background: yellow;
+}
+
+#progress3::-webkit-progress-value {
+    background: red;
+}
+
+#progress4::-webkit-progress-value {
+    background: blue;
+}
+
+#progress5::-webkit-progress-value {
+    background: purple;
+}
+
+#progress6::-webkit-progress-value {
+    background: orange;
+}
+progress[value]::-webkit-progress-value {
+    border-radius: 10em;
+}
 
 progress[value] {
     -webkit-appearance: none;
@@ -327,17 +348,7 @@ progress[value]::-webkit-progress-bar {
     background: var(--background);
 }
 
-progress[value]::-webkit-progress-value {
-    border-radius: 10em;
-    background: var(--color);
-}
-
-progress[value]::-moz-progress-bar {
-    border-radius: 10em;
-    background: var(--color);
-}
-
-.item__progress__bar {
+#item_progress1 {
     color: var(--color--five);
     display: flex;
     justify-content: center;
@@ -348,15 +359,21 @@ progress[value]::-moz-progress-bar {
     height: 10vw;
     font-size: 1vw;
     border-radius: 50vw;
-    background: radial-gradient(
-        closest-side, 
-        #1d1f38 85%, 
-        transparent 85% 100%), 
-        conic-gradient(var(--color--three) 
-        80%, 
-        transparent 0);  
-    
 }
+
+#item_progress2 {
+    color: var(--color--five);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 10vw;
+    height: 10vw;
+    font-size: 1vw;
+    border-radius: 50vw;
+}
+
 
 #information {
     margin-left: 2vw;

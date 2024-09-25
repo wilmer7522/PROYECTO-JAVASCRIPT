@@ -153,27 +153,27 @@ function unique(variable) {
                 <div id = "barras">
                     <div>
                         <label for="">Rocket weight :</label><br>
-                        <progress max="1420788" value="${data[variable].mass.kg}"></progress>
+                        <progress id="progress1" max="1420788" value="${data[variable].mass.kg}"></progress>
                     </div>
                     <div>
                         <label for="">Rocket weight :</label><br>
-                        <progress max="150000" value="${data[variable].payload_weights[0].kg}"></progress>
+                        <progress id="progress2" max="150000" value="${data[variable].payload_weights[0].kg}"></progress>
                     </div>
                     <div>
                         <label for="">Rocket weight :</label><br>
-                        <progress max="118" value="${data[variable].height.meters}"></progress>
+                        <progress id="progress3" max="118" value="${data[variable].height.meters}"></progress>
                     </div>
                     <div>
                         <label for="">Rocket weight :</label><br>
-                        <progress max="12.2" value="${data[variable].diameter.meters}"></progress>
+                        <progress id="progress4" max="12.2" value="${data[variable].diameter.meters}"></progress>
                     </div>
                     <div>
                         <label for="">Rocket weight :</label><br>
-                        <progress max="5.2" value="${data[variable].second_stage.payloads.composite_fairing.diameter.meters}"></progress>
+                        <progress id="progress5" max="5.2" value="${data[variable].second_stage.payloads.composite_fairing.diameter.meters}"></progress>
                     </div>
                     <div>
                         <label for="">Rocket weight :</label><br>
-                        <progress max="13.1" value="${data[variable].second_stage.payloads.composite_fairing.height.meters}"></progress>
+                        <progress id="progress6" max="13.1" value="${data[variable].second_stage.payloads.composite_fairing.height.meters}"></progress>
                     </div>
                 </div>
 
@@ -210,8 +210,8 @@ function unique(variable) {
             </mi-center>
 
             <mi-supcenter id="supcenter">
-                <div class="item__progress__bar" style= "background: radial-gradient(closest-side, #1d1f38 85%, transparent 85% 100%), conic-gradient(var(--color--three) ${porcentajeAcceleration}%, transparent 0);"><div class="progress__value"><strong>Atmospheric acceleration</strong><br><small>${porcentajeAcceleration.toFixed(2)} %</small><br><small>${acceleration} kN <br> ${data[variable].engines.thrust_sea_level.lbf} Lbf</small></div></div>
-                <div class="item__progress__bar" style="background: radial-gradient(closest-side, #1d1f38 85%, transparent 85% 100%), conic-gradient(var(--color--three) ${porcentajeSpeed}%, transparent 0);"><div class="progress__value"><strong>Speed in space</strong><br><small>${porcentajeSpeed.toFixed(2)} %</small><br><small>${speed} kN <br> ${data[variable].engines.thrust_vacuum.lbf} Lbf</small></div></div>
+                <div id="item_progress1" class="item__progress__bar" style= "background: radial-gradient(closest-side, #1d1f38 85%, transparent 85% 100%), conic-gradient(var(--color--six) ${porcentajeAcceleration}%, transparent 0);"><div class="progress__value"><strong>Atmospheric acceleration</strong><br><small>${porcentajeAcceleration.toFixed(2)} %</small><br><small>${acceleration} kN <br> ${data[variable].engines.thrust_sea_level.lbf} Lbf</small></div></div>
+                <div id="item_progress2" class="item__progress__bar" style="background: radial-gradient(closest-side, #1d1f38 85%, transparent 85% 100%), conic-gradient(var(--color--four) ${porcentajeSpeed}%, transparent 0);"><div class="progress__value"><strong>Speed in space</strong><br><small>${porcentajeSpeed.toFixed(2)} %</small><br><small>${speed} kN <br> ${data[variable].engines.thrust_vacuum.lbf} Lbf</small></div></div>
             </mi-supcenter>
 
             <mi-rightcenter id="rightcenterbar">

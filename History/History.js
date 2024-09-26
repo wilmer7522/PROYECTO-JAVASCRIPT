@@ -20,23 +20,6 @@ fetch('https://api.spacexdata.com/v4/history')
 .then(res => res.json())
 .then(data => {
 
-    document.addEventListener("DOMContentLoaded", () => {
-
-        container.innerHTML = `
-
-        <p id = "titulo">${data[0].title}</p>
-    
-        <div id = "tabla">
-            <div><p id = "descripcion">${data[0].details}</p></div>
-            <div><p id = "descripcion">${data[0].event_date_utc}</p></div>
-            <div><p id = "descripcion">${data[0].event_date_unix}</p></div>
-            <div><p id = "descripcion"><a href = "${data[0].links.article}">Web Page</p></div>
-        </div>
-
-        <div id ="page"><iframe src = "${data[0].links.article}"></div>
-    
-        `
-    })
 
     let listaItems = ""
     data.forEach(element => {
@@ -74,21 +57,24 @@ fetch('https://api.spacexdata.com/v4/history')
             <img id = "page" src = "./historyImg/52724298933_b47c3a847f_o.jpg">
         
             <div id = "tabla">
-                <div id = "cajas1">
+                <div id = "caja1">
                     <p id = "titles">Description</p>
                     <p id = "descripcion">${element.details}</p>
                 </div>
-                <div id = "cajas2">
-                    <p id = "titles">Event date</p>
-                    <p id = "descripcion">${element.event_date_utc}</p>
-                </div>
-                <div id = "cajas">
-                    <p id = "titles">Event date Unix</p>
-                    <p id = "descripcion">${element.event_date_unix}</p>
-                </div>
-                <div id = "cajas">
-                    <p id = "titles">Web page</p>
-                    <p id = "descripcion"><a href = "${element.links.article}">Web Page</p>
+
+                <div id = "caja">
+                    <div id = "caja2">
+                        <p id = "titles">Event date</p>
+                        <p id = "descripcion">${element.event_date_utc}</p>
+                    </div>
+                    <div id = "caja3">
+                        <p id = "titles">Event date Unix</p>
+                        <p id = "descripcion">${element.event_date_unix}</p>
+                    </div>
+                    <div id = "caja4">
+                        <p id = "titles">Web page</p>
+                        <p id = "descripcion"><a href = "${element.links.article}">Web Page</p>
+                    </div>
                 </div>
             </div>
 
@@ -97,5 +83,7 @@ fetch('https://api.spacexdata.com/v4/history')
         `
         }
     })
+
+    
 
 })

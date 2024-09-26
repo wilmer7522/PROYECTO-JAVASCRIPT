@@ -7,7 +7,7 @@
 
 @media (max-width: 1920px) and (min-width: 801px) {
     body {
-        overflow: hidden;
+        overflow-x: hidden;
     }
 
     * {
@@ -433,7 +433,7 @@
         top: 75vw;
         left: 0;
         width: 100vw;
-        height: 500vw;
+        height: 645vw;
         overflow-x: hidden;
     }
 
@@ -515,7 +515,7 @@
         position: absolute;
         width: 90vw;
         height: 100vw;
-        top: 300vw;
+        top: 320vw;
         left: 25vw;
         background: transparent;
         background-size: 200% 100%;
@@ -561,7 +561,7 @@
         position: fixed;
         width: 100vw;
         height: 20vw;
-        top: 186vw;
+        bottom: 0vw;
         left: 0vw;
         background-color: #14162C;
         display: flex;
@@ -672,9 +672,7 @@
     }
 
     #link {
-        position: absolute;
-        top: 180vw;
-        left: 11vw;
+        margin-left: 11vw;
         font-weight: 400;
         font-size: 5vw;
         color: rgb(207, 207, 209);
@@ -756,7 +754,6 @@
         justify-content: center;
         text-align: center;
         align-items: center;
-        flex-wrap: wrap;
         width: 50vw;
         height: 50vw;
         font-size: 5vw;
@@ -769,7 +766,6 @@
         justify-content: center;
         text-align: center;
         align-items: center;
-        flex-wrap: wrap;
         width: 50vw;
         height: 50vw;
         font-size: 5vw;
@@ -816,26 +812,6 @@
         background-color: rgb(207, 207, 209);
         display: flex;
         justify-content: center;
-    }
-
-    #icono1{
-        position: absolute;
-        top: -3vw;
-    }
-
-    #icono2{
-        position: absolute;
-        top: 67vw;
-    }
-
-    #icono3{
-        position: absolute;
-        top: 100vw;
-    }
-
-    #icono4{
-        position: absolute;
-        top: 128vw;
     }
 
 }

@@ -147,6 +147,7 @@ function unique(variable) {
                 <p id = "fly">${data[variable].first_flight}</p><br>
                 <img id= "icono4" src="../storage/img/icons/mech.svg" alt="">
                 <p id = "tittlelink"> Read more about the coete</p><br>
+                <p id = "link">Wikipedia</a></p>
             </mi-right>
 
             <mi-left id="leftbar" class="no">

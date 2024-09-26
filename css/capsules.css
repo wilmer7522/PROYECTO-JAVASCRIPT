@@ -109,7 +109,6 @@ button{
     border: none;
     position: relative;
     bottom: 0vw;
-    animation-name: botones;
     
 
 }
@@ -118,7 +117,7 @@ button{
 
 
 #buttons {
-   overflow: hidden;
+ /*overflow: hidden;*/
     width: 11vw;
     height: 2vw;
    /* border: 1px solid red;*/
@@ -455,8 +454,10 @@ button{
     /*background: coral; */
     grid-area: section__footer;
     display: grid;
-    grid-template-columns: 10fr 10fr 10fr;
+   grid-template-columns: 10fr 10fr 10fr;
     grid-template-areas: ". footer__menu .";
+    
+    
 }
 
 .footer ul {
@@ -613,4 +614,97 @@ progress[value]::-webkit-progress-value {
 progress[value]::-moz-progress-bar {
     border-radius: 10em;
     background: var(--color);
+}
+
+@media only screen and (max-width: 768px){
+
+    footer{
+        position: fixed;
+        top: 36.5em;
+        left: 0em;
+    }
+    .footer ul {
+        /*grid-area: footer__menu;*/
+        background: var(--color--one);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        width: 25em;
+    }
+
+    .container{
+        position: absolute;
+        top: 0.2em;
+    }
+    .container img{
+        opacity: 100%;
+    }
+
+    .header__title{
+        margin-top: 6.4em;
+        margin-left: 0.5em;
+        position: relative;
+
+    }
+
+    .section__information__1{
+        position: absolute;
+        top: 0.5em;
+        width: 25em;
+        left: -4em;
+    }
+
+    .flechas{
+        position: absolute;
+        left: 6em;
+        z-index: 5;
+        top: 9.7em;
+        width: 11em;
+        height: 7.5vw;
+        display: flex;
+        
+    }
+
+    .flechas button{
+        width: 2em;
+        height: 2em;
+        
+
+        
+    }
+
+    #buttons{
+        display: flex;
+        justify-content: center;
+        width: 10em;
+        height: 2em;
+
+
+        
+    }
+
+    .flechas>#flecha1{
+        width: 2em;
+        height: 2em;
+        position: relative;
+        top: 0em;
+        right: 0.2em;
+     
+
+    }
+
+    .flechas>#flecha2{
+        width: 2em;
+        height: 2em;
+        position: absolute;
+        left: 10.1em;
+        top: 0em;
+    }
+    
+    
+
+
+    
 }

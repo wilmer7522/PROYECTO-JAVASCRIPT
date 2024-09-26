@@ -206,7 +206,7 @@ function todo(variable) {
                     </div>
                 </div>
                 <div id="section__image" class="section__image">
-                    <div class="load" style="height: 350px"><marquee behavior="" direction="" scrollamount="15"  ><video src="./" autoplay muted loop></video></marquee></div>
+                    <div class="load" style="height: 350px"><video src="./storage/video/cohete.mp4" autoplay muted loop></video></div>
                 </div>
                 <div class="section__information__3">
                     <div>

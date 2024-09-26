@@ -421,7 +421,7 @@ marquee img {
     content: "";
     position: relative;
     margin-top: 10px;
-    right: -35px;
+    right: 0px;
     bottom: 0;
     width: 0;
     height: 0;
@@ -434,7 +434,7 @@ marquee img {
     content: "";
     position: relative;
     margin-top: 10px;
-    left: -35px;
+    left: 0px;
     bottom: 0;
     width: 0;
     height: 0;
@@ -597,7 +597,7 @@ progress[value]::-moz-progress-bar {
 
     .section__information__1 {
         margin-top: 0em;
-        width: 25em;
+        width: 28em;
         display: flex;
         justify-content: center;
         position: absolute;
@@ -644,9 +644,9 @@ progress[value]::-moz-progress-bar {
     .information__table__1 {
         position: absolute;
         top: 9.7em;
-        right: -2.6em;
+        right: -0.5em;
         height: 3em;
-        width: 11.5em;
+        width: 12.5em;
         display: flex;
         align-items: center;
         overflow: hidden;
@@ -656,16 +656,16 @@ progress[value]::-moz-progress-bar {
     .information__table__2 {
         position: absolute;
         top: 9.7em;
-        left: 3.2em;
+        left: 5em;
         height: 3em;
-        width: 12em;
+        width: 13em;
         display: flex;
         align-items: center;
         overflow: hidden;
     }
 
     .section__image {
-        width: 25em;
+        width: 27em;
         position: absolute;
         top: 13em;
         left: -9em;
@@ -681,10 +681,11 @@ progress[value]::-moz-progress-bar {
         align-items: center;
         border-top-left-radius: 0px;
         border-top-right-radius: 0px;
-        width: 25em;
-        height: 8em;
+        width: 29em;
+        height: 6em;
         position: relative;
-        top: 0.8em;
+        top: 0.5em;
+        right: 1em;
         
     }
 }

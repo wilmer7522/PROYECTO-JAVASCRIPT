@@ -199,14 +199,14 @@ function todo(variable) {
             <article class="section__information__container">
                 <div class="section__information__2">
                     <div>
-                        <div class="load" style="height: 150px;"><p>Water Landings: </p>${data[variable].water_landings}</div>
+                        <div class="load water" style="height: 150px;"><p>Water Landings: </p>${data[variable].water_landings}</div>
                     </div>
                     <div id="information__table__1" class="information__table__1">
-                        <div class="load" style="height: 160px;"><p>Type: </p>${data[variable].type}</div>
+                        <div class="load type" style="height: 160px;"><p>Type: </p>${data[variable].type}</div>
                     </div>
                 </div>
                 <div id="section__image" class="section__image">
-                    <div class="load" style="height: 350px"><marquee behavior="" direction="" scrollamount="15"  ><video src="./storage/video/capsula1.mp4" autoplay muted loop></video></marquee></div>
+                    <div class="load" style="height: 350px"><marquee behavior="" direction="" scrollamount="15"  ><video src="./" autoplay muted loop></video></marquee></div>
                 </div>
                 <div class="section__information__3">
                     <div>
@@ -220,7 +220,7 @@ function todo(variable) {
             <footer class="footer">
                 <ul>
                     <li id="rocket">
-                        <a  href="#">
+                        <a  href="./Rocket/Rocket.html">
                             <img src="storage/img/icons/rocket.svg">
                             <span>Rockets</span>
                         </a>
@@ -232,7 +232,7 @@ function todo(variable) {
                         </a>
                     </li>
                     <li id="history">
-                        <a  href="#">
+                        <a  href="./History/History.html">
                             <img src="storage/img/icons/history.svg">
                             <span>History</span>
                         </a>

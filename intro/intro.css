@@ -193,7 +193,7 @@
         font-family: "Roboto-Regular";
         z-index: 1;
         top: 10vw;
-        left: 7vw;
+        left: 9vw;
     }
 
     #description {
@@ -232,9 +232,9 @@
         left: 80vw;
         width: 15vw;
         height: 15vw;
-        border: none;
+        border: 0.1vw solid ;
         outline: none;
-        border-radius: 50vw;
+        border-radius: 2vw;
         cursor: pointer;
         background-color: rgb(14, 14, 26);
         color: rgb(234, 234, 234);

@@ -14,39 +14,6 @@ document.getElementById('iconcompany').addEventListener('click', () => {
     window.location.href = '../company.html';
 })
 
-let iconRocket = document.getElementById('iconrocket')
-let iconCapsule = document.getElementById('iconcapsule')
-let iconHistory = document.getElementById('iconhistory')
-let iconCompany = document.getElementById('iconcompany')
-
-document.getElementById("iconrocket").addEventListener("click", () => {
-    iconRocket.style.borderBottom = '0.3vw solid white'
-    iconCapsule.style.borderBottom = 'none'
-    iconHistory.style.borderBottom = 'none'
-    iconCompany.style.borderBottom = 'none'
-})
-
-document.getElementById("iconcapsule").addEventListener("click", () => {
-    iconCapsule.style.borderBottom = '0.3vw solid white'
-    iconRocket.style.borderBottom = 'none'
-    iconHistory.style.borderBottom = 'none'
-    iconCompany.style.borderBottom = 'none'
-})
-
-document.getElementById("iconhistory").addEventListener("click", () => {
-    iconHistory.style.borderBottom = '0.3vw solid white'
-    iconCapsule.style.borderBottom = 'none'
-    iconRocket.style.borderBottom = 'none'
-    iconCompany.style.borderBottom = 'none'
-})
-
-document.getElementById("iconcompany").addEventListener("click", () => {
-    iconCompany.style.borderBottom = '0.3vw solid white'
-    iconHistory.style.borderBottom = 'none'
-    iconCapsule.style.borderBottom = 'none'
-    iconRocket.style.borderBottom = 'none'
-})
-
 let boton1 = document.getElementById('uno')
 let boton2 = document.getElementById('dos')
 let boton3 = document.getElementById('tres')

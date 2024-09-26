@@ -26,17 +26,20 @@ Dicho portafolio cuenta con 4 secciones principales:
 
 Aquí podrás observar lo utilizado para llevar a cabo la creación de la página web de SpaceX. 
 
+![alt text](image.png)
+![alt text](image-1.png)
+
 # Características
 
-* Archivos [index.html]: estos contienen el código principal.
+* Archivo `index.html`: Página de bienvenida.
 
-* Archivos [style.css]: estos nos permiten realizar el diseño de las páginas.
+* Archivos `.html`: Contiene la estructura de la página.
 
-* Archivo [readme]: el cual contiene toda la información importante realizada en el código y CSS.
+* Archivos ``.css``: Contiene las hojas de estilo para la presentación visual de la página.
 
-* Carpeta [imagenes]: esta carpeta contiene las imágenes utilizadas en el proyecto.
+* Archivos `.js`: Aporta la funcionalidad y estructura de la página.
 
-* Carpeta [font]: es la que tiene los tres tipos de letra utilizadas en la página web.
+* Carpeta `storage`: Contiene recursos como imágenes, videos y tipografías usadas en la página.
 
 # Diseño
 
@@ -55,7 +58,16 @@ Este diseño busca capturar la esencia pionera de SpaceX, ofreciendo una experie
 # Instrucciones
 
 1. Clonar el repositorio cargado en GitHub.
-2. Abrir en la nube el archivo index.html en un navegador web.
+~~~
+https://github.com/wilmer7522/PROYECTO-FILTRO_JS_BUSTAMANTEJESUS-ROJASWILMER.git
+~~~
+
+2. Si trabajas desde VsCode, descarga la extensión `Live Server`.
+
+3. Selecciona el archivo `index.html`, click derecho y selecciona `Open with Live Server`.
+
+4. El archivo se cargará en tu navegador web.
+
 
 # Desarrollado por:
 
